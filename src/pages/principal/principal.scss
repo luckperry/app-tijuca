@@ -1,5 +1,5 @@
 page-principal {
-
+    
     .modulos{
         width: 100%;
         height: 100%;
@@ -43,11 +43,14 @@ page-principal {
             margin-right: -2%;
             margin-top: 6%;
             margin-left: 11%;
-            background-color: #135F8C;
+            // background-color: #135F8C;
+            background-color: #0B4D8E;            
             border-radius: 15%;
           }
           .card-md:hover{
-              background-color:#D31033;
+            //   background-color: #0B4D8E;
+            background-color: #135F8C;              
+            //background-color: rgb(211, 16, 51);
           }
           .card-title {
             position: absolute;
