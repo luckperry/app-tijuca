@@ -34,23 +34,24 @@ page-principal {
           ion-card {
             position: relative;
             text-align: center;
-            height: 22%;
+            height: 25%;
           }
 
           .card-md{
-            width: 36%;
+            width: 43.5%;
             float: left;
             margin-right: -2%;
-            margin-top: 6%;
-            margin-left: 11%;
+            margin-top: 1%;
+            margin-left: 5%;
             // background-color: #135F8C;
             background-color: #0B4D8E;            
-            border-radius: 15%;
+            border-radius: 5%;
           }
           .card-md:hover{
             //   background-color: #0B4D8E;
-            background-color: #135F8C;              
-            //background-color: rgb(211, 16, 51);
+            //background-color: #135F8C;              
+            background-color: rgb(211, 16, 51);
+            //background-color: red;
           }
           .card-title {
             position: absolute;
