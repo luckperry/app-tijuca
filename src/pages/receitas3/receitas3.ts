@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 
 import { ViagensPage } from '../viagens/viagens';
 
@@ -10,18 +10,16 @@ import { ViagensPage } from '../viagens/viagens';
 })
 export class Receitas3Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
-  }
-
-
-  showAlert() {
-    let alert = this.alertCtrl.create({
-      title: 'Adicionado',
-      subTitle: 'Receita Adicionadas',
-      buttons: ['OK']
-    });
-    alert.present();
-    this.navCtrl.push(ViagensPage);
-  }
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController,
+     public toastCtrl: ToastController) {
+  }  
+  showToast() {
+      let toast = this.toastCtrl.create({
+        message: 'Receita adicionada com sucesso',
+        duration: 3000 
+      });
+      toast.present();
+      this.navCtrl.setRoot(ViagensPage);
+    }
 }
+

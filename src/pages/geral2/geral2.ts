@@ -17,10 +17,5 @@ import { ViagensPage } from '../viagens/viagens';
 export class Geral2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  linkVoltar(){
-    this.navCtrl.push(ViagensPage);
-  }
-
+  } 
 }

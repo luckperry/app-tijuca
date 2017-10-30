@@ -18,8 +18,5 @@ export class Geral3Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  linkVoltar(){
-    this.navCtrl.push(ViagensPage);
-  }
+ 
 }

@@ -14,13 +14,11 @@
 
 
 <ion-content padding>
-<ion-list>
     <ion-item>
-        <ion-label>Comprovante</ion-label>
-        <ion-input type = "file"></ion-input>
+        <label for="file">  
+          <img src="../assets/img/camera.png"/>
+        </label>
+        <input type="file" name="file" id="file" hidden="">
       </ion-item>
-    </ion-list>
-
-
-   <button ion-button full (click) = "showAlert()">Adicionar</button>
+   <button ion-button full (click) = "showToast()">Adicionar</button>
 </ion-content>
