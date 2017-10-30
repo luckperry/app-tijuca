@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ViagensPage } from '../viagens/viagens';
 
-import { ViagensPage } from '../viagens/viagens'; 
 /**
- * Generated class for the PrincipalPage page.
+ * Generated class for the Geral3Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,14 +11,15 @@ import { ViagensPage } from '../viagens/viagens';
 
 @IonicPage()
 @Component({
-  selector: 'page-principal',
-  templateUrl: 'principal.html',
+  selector: 'page-geral3',
+  templateUrl: 'geral3.html',
 })
-export class PrincipalPage {
+export class Geral3Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  } 
-  linkViagens(){
+  }
+
+  linkVoltar(){
     this.navCtrl.push(ViagensPage);
   }
 }

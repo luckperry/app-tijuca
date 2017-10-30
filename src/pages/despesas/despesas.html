@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>  <ion-title>Despesas da Viagem</ion-title></ion-navbar>
+  
+ </ion-header>
+ 
+ <ion-content padding>
+   
+   <ion-list>
+     <ion-item>
+       <ion-label floating>Despesas</ion-label>
+       <ion-select [(ngModel)]="despesa">
+         <ion-option value="1">Lanche</ion-option>
+         <ion-option value="2">Almoço</ion-option>
+         <ion-option value="3">Jantar</ion-option>
+         <ion-option value="4">Almoçado</ion-option>
+         <ion-option value="5">Borracharia</ion-option>
+         <ion-option value="6">Corrente</ion-option>
+         <ion-option value="7">Lavagem de veículos</ion-option>
+         <ion-option value="8">Conserto de pneu</ion-option>
+         <ion-option value="9">Carga/Descarga</ion-option>
+         <ion-option value="10">Moto taxi</ion-option>
+       </ion-select>
+     </ion-item>
+ 
+     <ion-item>
+       <ion-label>Data</ion-label>
+       <ion-input type = "date" [(ngModel)] = "data"></ion-input>
+     </ion-item>
+ 
+     <ion-item>
+       <ion-label floating>Valor</ion-label>
+       <ion-input type = "float" type = "number" [(ngModel)] = "valor"></ion-input>
+     </ion-item>
+ 
+     <ion-item>
+       <ion-label>Comprovante</ion-label>
+       <ion-input type = "file"></ion-input>
+     </ion-item>
+ 
+   </ion-list>
+ 
+   <button ion-button full (click) = "showAlert()">Adicionar</button>
+ 
+ </ion-content>

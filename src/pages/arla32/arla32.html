@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+    <ion-title>
+       Arla 32
+    </ion-title>
+  </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Tipo Abastecimento</ion-label>
+        <ion-select [(ngModel)]="tipo">
+          <ion-option value="ext">Externo</ion-option>
+          <ion-option value="int">Interno</ion-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label floating>Posto Combustivel</ion-label>
+        <ion-input type = "text" [(ngModel)] = "posto"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label>Data</ion-label>
+          <ion-input type = "date" [(ngModel)] = "data"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Km</ion-label>
+          <ion-input type = "number" [(ngModel)] = "km" ></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label>Foto Odômetro</ion-label>
+            <ion-input type = "file"></ion-input>
+          </ion-item>
+  
+    </ion-list>
+  
+    <button ion-button full (click) = "linkArla322()">Lançar Abastecimento</button>
+  
+  </ion-content>

@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-import { PrincipalPage } from '../pages/principal/principal';
-import { ViagensPage } from '../pages/viagens/viagens';
+import { PrincipalPage } from '../pages/principal/principal'; 
 
 @Component({
   templateUrl: 'app.html'

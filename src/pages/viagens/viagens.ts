@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ViagensPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ReceitasPage } from '../receitas/receitas';
+import { DespesasPage } from '../despesas/despesas';
+import { Arla32Page } from '../arla32/arla32';
+import { GeralPage } from '../geral/geral';
+import { RotasPage } from '../rotas/rotas';
 
 @IonicPage()
 @Component({
@@ -20,6 +19,26 @@ export class ViagensPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViagensPage');
+  }
+
+  linkReceitas(){
+    this.navCtrl.push(ReceitasPage);
+  }
+  
+  linkDespesas(){
+      this.navCtrl.push(DespesasPage);
+  }
+
+  linkArla32(){
+    this.navCtrl.push(Arla32Page);
+  }
+
+  linkGeral(){
+    this.navCtrl.push(GeralPage);
+  }
+
+  linkAbastecimento(){
+    this.navCtrl.push(RotasPage);
   }
 
 }

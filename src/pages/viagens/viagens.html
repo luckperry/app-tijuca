@@ -1,95 +1,55 @@
 <ion-header>
-  
-    <ion-navbar>
-      <ion-title>Viagens</ion-title>
-    </ion-navbar>
-  
-  </ion-header>
-  
-  
-  <ion-content class="card-background-page">
-  
-        <a  (click)="linkViagens();">
-          <ion-card class="card-xd">
-            <img class="imagem-xd" src="../assets/img/frotas2.png"/>
-            <div class="card-title-xd">Abastecimento</div>
-          </ion-card>
-        </a>
-        <div class="central">
-        <a href="#">
-            <ion-card class="card-md">
-            <img class="imagem" src="../assets/img/caixa2.png"/>
-            <div class="card-title">Geral</div>
-          </ion-card>
-        </a>
+
+  <ion-navbar>
+    <ion-title>Viagens</ion-title>
+  </ion-navbar>
+
+</ion-header>
 
 
-        <a href="#">
-          <ion-card class="card-md">
-          <img class="imagem" src="../assets/img/caixa2.png"/>
-          <div class="card-title">Arla 32</div>
-        </ion-card>
-      </a>
-  
-        <a href="#">
-          <ion-card class="card-md">
-          <img class="imagem" src="../assets/img/vendas3.png"/>
-          <div class="card-title">Gastos</div>
-        </ion-card>
-      </a>
-  
-        <a href="#">
-            <ion-card class="card-md">
-            <img class="imagem" src="../assets/img/cheque2.png"/>
-            <div class="card-title">Receitas</div>
-          </ion-card>
-        </a>
-      </div>
-        <a href="#">
-            <ion-card class="card-xd">
-            <img class="imagem-xd" src="../assets/img/fabrica_racao_logo2.png"/>
-            <div class="card-title-xd">Relatórios</div>
-          </ion-card>
-        </a> 
-  
-  
-  
-  
-  
-  
-  
-  
-    <!-- <div class="modulos">
-      <div class="modulo"><span>Vendas</span></div>
-      <div class="modulo"><span>Viagens</span></div>
-    </div> -->
-  
-    <!-- <ion-grid class="modulos">
-  
-        <div ion-row class="row" col-md-12>
-          <a><ion-col col-sm-9 class="col">Viagens</ion-col></a>
-          <ion-col col-1 class="space-col"></ion-col>
-          <ion-col col-sm-9 class="col">Vendas</ion-col>
-        </div> -->
-  
-        <!-- <div ion-row  class="space-row"></div> -->
-        
-  
-        <!-- <div ion-row  col-md-12 class="row">
-          <ion-col col-sm-6 class="col">Cheques</ion-col>
-          <ion-col col-1 class="space-col"></ion-col>        
-          <ion-col col-sm-6 class="col">Fábrica</ion-col>        
-        </div> -->
-  
-        <!-- <div ion-row class="space-row"></div> -->
-  
-        <!-- <div ion-row  col-md-12 class="row">
-          <ion-col col-sm-6 class="col">Caixa</ion-col>        
-          <ion-col col-1 class="space-col"></ion-col>        
-          <ion-col col-sm-6 class="col">Suporte</ion-col>        
-        </div>
-  
-      </ion-grid> -->
-  
-  </ion-content>
-  
+<ion-content class="card-background-page">
+
+  <a (click)="linkAbastecimento()">
+    <ion-card class="card-xd">
+      <img class="imagem-xd" src="../assets/img/frotas2.png" />
+      <div class="card-title-xd">Abastecimento</div>
+    </ion-card>
+  </a>
+  <div class="central">
+
+    <a (click)="linkGeral()">
+      <ion-card class="card-md">
+        <img class="imagem" src="../assets/img/caixa2.png" />
+        <div class="card-title">Geral</div>
+      </ion-card>
+    </a>
+
+
+    <a (click)="linkArla32()">
+      <ion-card class="card-md">
+        <img class="imagem" src="../assets/img/caixa2.png" />
+        <div class="card-title">Arla 32</div>
+      </ion-card>
+    </a>
+
+    <a (click)="linkDespesas()">
+      <ion-card class="card-md">
+        <img class="imagem" src="../assets/img/vendas3.png" />
+        <div class="card-title">Gastos</div>
+      </ion-card>
+    </a>
+
+    <a (click)="linkReceitas()">
+      <ion-card class="card-md">
+        <img class="imagem" src="../assets/img/cheque2.png" />
+        <div class="card-title">Receitas</div>
+      </ion-card>
+    </a>
+  </div>
+  <a href="#">
+    <ion-card class="card-xd">
+      <img class="imagem-xd" src="../assets/img/fabrica_racao_logo2.png" />
+      <div class="card-title-xd">Relatórios</div>
+    </ion-card>
+  </a>
+</ion-content>

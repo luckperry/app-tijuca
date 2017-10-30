@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ViagensPage } from '../viagens/viagens'; 
+import { Receitas2Page } from '../receitas2/receitas2';
 /**
- * Generated class for the PrincipalPage page.
+ * Generated class for the ReceitasPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,14 +11,19 @@ import { ViagensPage } from '../viagens/viagens';
 
 @IonicPage()
 @Component({
-  selector: 'page-principal',
-  templateUrl: 'principal.html',
+  selector: 'page-receitas',
+  templateUrl: 'receitas.html',
 })
-export class PrincipalPage {
+export class ReceitasPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  } 
-  linkViagens(){
-    this.navCtrl.push(ViagensPage);
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ReceitasPage');
+  }
+  linkReceitas2(){
+    this.navCtrl.push(Receitas2Page);
+  }
+
 }
