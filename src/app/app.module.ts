@@ -5,13 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { PrincipalPage } from '../pages/principal/principal';
+import { HomePage } from '../pages/home/home/home';
+import { PrincipalPage } from '../pages/principal/principal/principal';
 import { ViagensPage } from '../pages/viagens/viagens';
 import { ReceitasPage } from '../pages/receitas/receitas';
 import { Receitas2Page } from '../pages/receitas2/receitas2';
 import { Receitas3Page } from '../pages/receitas3/receitas3';
-import { DespesasPage } from '../pages/despesas/despesas'; 
+import { DespesasPage } from '../pages/despesas/despesas/despesas';
 import { GeralPage } from '../pages/geral/geral'; 
 import { AbastecimentoPage } from '../pages/abastecimento/abastecimento';
 import { Abastecimento2Page } from '../pages/abastecimento2/abastecimento2';
