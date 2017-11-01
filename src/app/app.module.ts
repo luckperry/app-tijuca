@@ -5,26 +5,27 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { PrincipalPage } from '../pages/principal/principal';
+import { HomePage } from '../pages/home/home/home';
+import { PrincipalPage } from '../pages/principal/principal/principal';
 import { ViagensPage } from '../pages/viagens/viagens';
 import { ReceitasPage } from '../pages/receitas/receitas';
 import { Receitas2Page } from '../pages/receitas2/receitas2';
 import { Receitas3Page } from '../pages/receitas3/receitas3';
-import { DespesasPage } from '../pages/despesas/despesas';
-import { Arla322Page } from '../pages/arla322/arla322';
-import { Arla32Page } from '../pages/arla32/arla32';
- 
-import { AbastecimentoPage } from '../pages/abastecimento/abastecimento';
-import { Abastecimento2Page } from '../pages/abastecimento2/abastecimento2';
-import { Abastecimento3Page } from '../pages/abastecimento3/abastecimento3';
-import { Abastecimento4Page } from '../pages/abastecimento4/abastecimento4';
-import { RotasPage } from '../pages/rotas/rotas';
-
 
 import { GeralPage } from '../pages/geral/geral-page/geral-page';
 import { GeralDadosViagemPage } from '../pages/geral/geral-dados-viagem/geral-dados-viagem';
 import { GeralDadosMotoristaPage } from '../pages/geral/geral-dados-motorista/geral-dados-motorista';
+import { DespesasPage } from '../pages/despesas/despesas/despesas';
+
+import { AbastecimentoPagamentoPage } from '../pages/abastecimento/abastecimento-pagamento/abastecimento-pagamento';
+import { AbastecimentoOdometroPage } from '../pages/abastecimento/abastecimento-odometro/abastecimento-odometro';
+import { AbastecimentoBomba1Page } from '../pages/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
+import { AbastecimentoBomba2Page } from '../pages/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
+
+import { RotasPage } from '../pages/rotas/rotas';
+import { ArlapagPage } from '../pages/arla-32/arla-pag/arlapag';
+import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
+
 
 @NgModule({
   declarations: [
@@ -35,17 +36,17 @@ import { GeralDadosMotoristaPage } from '../pages/geral/geral-dados-motorista/ge
     ReceitasPage,
     Receitas2Page,
     Receitas3Page,
-    DespesasPage,
-    Arla32Page,
-    Arla322Page,
+    DespesasPage, 
     GeralPage,
-    AbastecimentoPage,
-    Abastecimento2Page,
-    Abastecimento3Page,
-    Abastecimento4Page,
+    AbastecimentoPagamentoPage,
+    AbastecimentoOdometroPage,
+    AbastecimentoBomba1Page,
+    AbastecimentoBomba2Page,
     RotasPage,
     GeralDadosViagemPage,
     GeralDadosMotoristaPage
+    ArlapagPage,
+    ArlapostoPage
     
   ],
   imports: [
@@ -61,17 +62,16 @@ import { GeralDadosMotoristaPage } from '../pages/geral/geral-dados-motorista/ge
     ReceitasPage,
     Receitas2Page,    
     Receitas3Page,
-    DespesasPage,   
-    Arla32Page,
-    Arla322Page,
+    DespesasPage,
     GeralPage,
-    AbastecimentoPage,
-    Abastecimento2Page,
-    Abastecimento3Page,
-    Abastecimento4Page,
+    AbastecimentoPagamentoPage,
+    AbastecimentoOdometroPage,
+    AbastecimentoBomba1Page,
     RotasPage,
     GeralDadosViagemPage,
     GeralDadosMotoristaPage
+    ArlapagPage,
+    ArlapostoPage
   ],
   providers: [
     StatusBar,
