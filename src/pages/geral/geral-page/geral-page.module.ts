@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { Geral2Page } from './geral2';
+import { GeralPage } from './geral-page';
+
 
 @NgModule({
   declarations: [
-    Geral2Page,
+    GeralPage,
   ],
   imports: [
-    IonicPageModule.forChild(Geral2Page),
+    IonicPageModule.forChild(GeralPage),
   ],
 })
-export class Geral2PageModule {}
+export class GeralPageModule {}

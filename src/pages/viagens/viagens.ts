@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { ReceitasPage } from '../receitas/receitas';
+import { GeralPage } from '../geral/geral-page/geral-page';
 import { DespesasPage } from '../despesas/despesas/despesas';
-import { GeralPage } from '../geral/geral';
 import { RotasPage } from '../rotas/rotas';
 import { ArlapostoPage } from '../arla-32/arla-posto/arlaposto';
 
