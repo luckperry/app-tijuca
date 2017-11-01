@@ -5,7 +5,7 @@ import { ReceitasPage } from '../receitas/receitas';
 import { GeralPage } from '../geral/geral-page/geral-page';
 import { DespesasPage } from '../despesas/despesas/despesas';
 import { RotasPage } from '../rotas/rotas';
-import { ArlapostoPage } from '../arla-32/arla-posto/arlaposto';
+import { ArlaPostoPage } from '../arla-32/arla-posto/arla-posto';
 
 @IonicPage()
 @Component({
@@ -30,7 +30,7 @@ export class ViagensPage {
   }
 
   linkArla32(){
-    this.navCtrl.push(ArlapostoPage);
+    this.navCtrl.push(ArlaPostoPage);
   }
 
   linkGeral(){

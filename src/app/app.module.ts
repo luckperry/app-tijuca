@@ -23,8 +23,9 @@ import { AbastecimentoBomba1Page } from '../pages/abastecimento/abastecimento-bo
 import { AbastecimentoBomba2Page } from '../pages/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
 
 import { RotasPage } from '../pages/rotas/rotas';
-import { ArlapagPage } from '../pages/arla-32/arla-pag/arlapag';
-import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
+import { ArlaPagPage } from '../pages/arla-32/arla-pag/arla-pag';
+import { ArlaPostoPage } from '../pages/arla-32/arla-posto/arla-posto';
+
 
 
 @NgModule({
@@ -44,9 +45,9 @@ import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
     AbastecimentoBomba2Page,
     RotasPage,
     GeralDadosViagemPage,
-    GeralDadosMotoristaPage
-    ArlapagPage,
-    ArlapostoPage
+    GeralDadosMotoristaPage,
+    ArlaPagPage,
+    ArlaPostoPage
     
   ],
   imports: [
@@ -69,9 +70,9 @@ import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
     AbastecimentoBomba1Page,
     RotasPage,
     GeralDadosViagemPage,
-    GeralDadosMotoristaPage
-    ArlapagPage,
-    ArlapostoPage
+    GeralDadosMotoristaPage,
+    ArlaPagPage,
+    ArlaPostoPage
   ],
   providers: [
     StatusBar,
