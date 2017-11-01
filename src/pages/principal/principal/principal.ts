@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ViagensPage } from '../../viagens/viagens'; 
+import { ViagensPage } from '../../modulo-viagens/viagens/viagens'; 
 
 
 @IonicPage()
