@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular'; 
-import { ArlapagPage } from '../arla-pag/arlapag';
+import { ArlaPagPage } from './arla-pag';
 
 @NgModule({
   declarations: [
-    ArlapagPage,
+    ArlaPagPage,
   ],
   imports: [
-    IonicPageModule.forChild(ArlapagPage),
+    IonicPageModule.forChild(ArlaPagPage),
   ],
 })
-export class Arla32PageModule {}
+export class ArlaPagModule {}

@@ -11,17 +11,22 @@ import { ViagensPage } from '../pages/viagens/viagens';
 import { ReceitasFornecedorPage } from '../pages/receitas/receita-fornecedor/receita-fornecedor';
 import { ReceitasQntPage } from '../pages/receitas/receitas-qnt/receitas-qnt';
 import { ReceitasFotoPage } from '../pages/receitas/receitas-foto/receitas-foto';
+
+import { GeralPage } from '../pages/geral/geral-page/geral-page';
+import { GeralDadosViagemPage } from '../pages/geral/geral-dados-viagem/geral-dados-viagem';
+import { GeralDadosMotoristaPage } from '../pages/geral/geral-dados-motorista/geral-dados-motorista';
 import { DespesasPage } from '../pages/despesas/despesas/despesas';
-import { GeralPage } from '../pages/geral/geral'; 
-import { AbastecimentoPage } from '../pages/abastecimento/abastecimento';
-import { Abastecimento2Page } from '../pages/abastecimento2/abastecimento2';
-import { Abastecimento3Page } from '../pages/abastecimento3/abastecimento3';
-import { Abastecimento4Page } from '../pages/abastecimento4/abastecimento4';
+
+import { AbastecimentoPagamentoPage } from '../pages/abastecimento/abastecimento-pagamento/abastecimento-pagamento';
+import { AbastecimentoOdometroPage } from '../pages/abastecimento/abastecimento-odometro/abastecimento-odometro';
+import { AbastecimentoBomba1Page } from '../pages/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
+import { AbastecimentoBomba2Page } from '../pages/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
+
 import { RotasPage } from '../pages/rotas/rotas';
-import { Geral2Page } from '../pages/geral2/geral2';
-import { Geral3Page } from '../pages/geral3/geral3';
-import { ArlapagPage } from '../pages/arla-32/arla-pag/arlapag';
-import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
+import { ArlaPagPage } from '../pages/arla-32/arla-pag/arla-pag';
+import { ArlaPostoPage } from '../pages/arla-32/arla-posto/arla-posto';
+
+
 
 @NgModule({
   declarations: [
@@ -34,15 +39,15 @@ import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
     ReceitasFotoPage,
     DespesasPage, 
     GeralPage,
-    AbastecimentoPage,
-    Abastecimento2Page,
-    Abastecimento3Page,
-    Abastecimento4Page,
+    AbastecimentoPagamentoPage,
+    AbastecimentoOdometroPage,
+    AbastecimentoBomba1Page,
+    AbastecimentoBomba2Page,
     RotasPage,
-    Geral2Page,
-    Geral3Page,
-    ArlapagPage,
-    ArlapostoPage
+    GeralDadosViagemPage,
+    GeralDadosMotoristaPage,
+    ArlaPagPage,
+    ArlaPostoPage
     
   ],
   imports: [
@@ -60,15 +65,14 @@ import { ArlapostoPage } from '../pages/arla-32/arla-posto/arlaposto';
     ReceitasFotoPage,
     DespesasPage,
     GeralPage,
-    AbastecimentoPage,
-    Abastecimento2Page,
-    Abastecimento3Page,
-    Abastecimento4Page,
+    AbastecimentoPagamentoPage,
+    AbastecimentoOdometroPage,
+    AbastecimentoBomba1Page,
     RotasPage,
-    Geral2Page,
-    Geral3Page,
-    ArlapagPage,
-    ArlapostoPage
+    GeralDadosViagemPage,
+    GeralDadosMotoristaPage,
+    ArlaPagPage,
+    ArlaPostoPage
   ],
   providers: [
     StatusBar,

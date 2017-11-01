@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-import { ViagensPage } from '../../viagens/viagens'; 
+import { ViagensPage } from '../../viagens/viagens';
 
 
 @IonicPage()
 @Component({
-  selector: 'page-principal',
-  templateUrl: 'principal.html',
+  selector: 'geral-dados-viagem',
+  templateUrl: 'geral-dados-viagem.html',
 })
-export class PrincipalPage {
+export class GeralDadosViagemPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   } 
-  linkViagens(){
-    this.navCtrl.push(ViagensPage);
-  }
 }

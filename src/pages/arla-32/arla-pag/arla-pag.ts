@@ -6,10 +6,10 @@ import { ViagensPage } from '../../viagens/viagens';
 
 @IonicPage()
 @Component({
-  selector: 'page-arlapag',
-  templateUrl: 'arlapag.html',
+  selector: 'arla-pag-page',
+  templateUrl: 'arla-pag.html',
 })
-export class ArlapagPage {
+export class ArlaPagPage {
 
   litros: number;
   litro: number;

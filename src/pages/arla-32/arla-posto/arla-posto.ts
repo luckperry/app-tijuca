@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular'; 
-import { ArlapagPage } from '../arla-pag/arlapag';
+import { ArlaPagPage } from '../arla-pag/arla-pag';
 
 
 @IonicPage()
 @Component({
-  selector: 'page-arlaposto',
-  templateUrl: 'arlaposto.html',
+  selector: 'arla-posto-page',
+  templateUrl: 'arla-posto.html',
 })
-export class ArlapostoPage {
+export class ArlaPostoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   linkArlaPage(){
-    this.navCtrl.push(ArlapagPage);
+    this.navCtrl.push(ArlaPagPage);
   }
 }
