@@ -8,9 +8,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home/home';
 import { PrincipalPage } from '../pages/principal/principal/principal';
 import { ViagensPage } from '../pages/viagens/viagens';
-import { ReceitasPage } from '../pages/receitas/receitas';
-import { Receitas2Page } from '../pages/receitas2/receitas2';
-import { Receitas3Page } from '../pages/receitas3/receitas3';
+import { ReceitasFornecedorPage } from '../pages/receitas/receita-fornecedor/receita-fornecedor';
+import { ReceitasQntPage } from '../pages/receitas/receitas-qnt/receitas-qnt';
+import { ReceitasFotoPage } from '../pages/receitas/receitas-foto/receitas-foto';
 
 import { GeralPage } from '../pages/geral/geral-page/geral-page';
 import { GeralDadosViagemPage } from '../pages/geral/geral-dados-viagem/geral-dados-viagem';
@@ -34,9 +34,9 @@ import { ArlaPostoPage } from '../pages/arla-32/arla-posto/arla-posto';
     HomePage,
     PrincipalPage,
     ViagensPage,
-    ReceitasPage,
-    Receitas2Page,
-    Receitas3Page,
+    ReceitasFornecedorPage,
+    ReceitasQntPage,
+    ReceitasFotoPage,
     DespesasPage, 
     GeralPage,
     AbastecimentoPagamentoPage,
@@ -60,9 +60,9 @@ import { ArlaPostoPage } from '../pages/arla-32/arla-posto/arla-posto';
     HomePage,
     PrincipalPage,
     ViagensPage,
-    ReceitasPage,
-    Receitas2Page,    
-    Receitas3Page,
+    ReceitasFornecedorPage,
+    ReceitasQntPage,    
+    ReceitasFotoPage,
     DespesasPage,
     GeralPage,
     AbastecimentoPagamentoPage,

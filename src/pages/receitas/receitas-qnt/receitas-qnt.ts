@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Receitas3Page } from '../receitas3/receitas3';
-
-/**
- * Generated class for the Receitas2Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ReceitasFotoPage } from '../receitas-foto/receitas-foto';
 
 @IonicPage()
 @Component({
-  selector: 'page-receitas2',
-  templateUrl: 'receitas2.html',
+  selector: 'page-receitas-qnt',
+  templateUrl: 'receitas-qnt.html',
 })
-export class Receitas2Page {
+export class ReceitasQntPage {
 
   idUnidadeMedida: string;
   valorUnitario: number;
@@ -44,6 +37,6 @@ export class Receitas2Page {
   }
 
   linkReceitas3() {
-    this.navCtrl.push(Receitas3Page);
+    this.navCtrl.push(ReceitasFotoPage);
   }
 }
