@@ -4,8 +4,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ReceitasPage } from '../receitas/receitas';
 import { DespesasPage } from '../despesas/despesas';
 import { Arla32Page } from '../arla32/arla32';
-import { GeralPage } from '../geral/geral';
 import { RotasPage } from '../rotas/rotas';
+import { GeralPage } from '../geral/geral-page/geral-page';
 
 @IonicPage()
 @Component({

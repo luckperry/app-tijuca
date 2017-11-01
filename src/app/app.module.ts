@@ -14,14 +14,17 @@ import { Receitas3Page } from '../pages/receitas3/receitas3';
 import { DespesasPage } from '../pages/despesas/despesas';
 import { Arla322Page } from '../pages/arla322/arla322';
 import { Arla32Page } from '../pages/arla32/arla32';
-import { GeralPage } from '../pages/geral/geral'; 
+ 
 import { AbastecimentoPage } from '../pages/abastecimento/abastecimento';
 import { Abastecimento2Page } from '../pages/abastecimento2/abastecimento2';
 import { Abastecimento3Page } from '../pages/abastecimento3/abastecimento3';
 import { Abastecimento4Page } from '../pages/abastecimento4/abastecimento4';
 import { RotasPage } from '../pages/rotas/rotas';
-import { Geral2Page } from '../pages/geral2/geral2';
-import { Geral3Page } from '../pages/geral3/geral3';
+
+
+import { GeralPage } from '../pages/geral/geral-page/geral-page';
+import { GeralDadosViagemPage } from '../pages/geral/geral-dados-viagem/geral-dados-viagem';
+import { GeralDadosMotoristaPage } from '../pages/geral/geral-dados-motorista/geral-dados-motorista';
 
 @NgModule({
   declarations: [
@@ -41,8 +44,8 @@ import { Geral3Page } from '../pages/geral3/geral3';
     Abastecimento3Page,
     Abastecimento4Page,
     RotasPage,
-    Geral2Page,
-    Geral3Page
+    GeralDadosViagemPage,
+    GeralDadosMotoristaPage
     
   ],
   imports: [
@@ -67,8 +70,8 @@ import { Geral3Page } from '../pages/geral3/geral3';
     Abastecimento3Page,
     Abastecimento4Page,
     RotasPage,
-    Geral2Page,
-    Geral3Page
+    GeralDadosViagemPage,
+    GeralDadosMotoristaPage
   ],
   providers: [
     StatusBar,
