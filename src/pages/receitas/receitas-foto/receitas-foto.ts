@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 
-import { ViagensPage } from '../viagens/viagens';
+import { ViagensPage } from '../../viagens/viagens';
 
 @IonicPage()
 @Component({
-  selector: 'page-receitas3',
-  templateUrl: 'receitas3.html',
+  selector: 'page-receitas-foto',
+  templateUrl: 'receitas-foto.html',
 })
-export class Receitas3Page {
+export class ReceitasFotoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController,
      public toastCtrl: ToastController) {

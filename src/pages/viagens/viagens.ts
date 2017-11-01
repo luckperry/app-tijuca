@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ReceitasPage } from '../receitas/receitas';
+import { ReceitasFornecedorPage } from '../receitas/receita-fornecedor/receita-fornecedor';
 import { DespesasPage } from '../despesas/despesas/despesas';
 import { GeralPage } from '../geral/geral';
 import { RotasPage } from '../rotas/rotas';
@@ -22,7 +22,7 @@ export class ViagensPage {
   }
 
   linkReceitas(){
-    this.navCtrl.push(ReceitasPage);
+    this.navCtrl.push(ReceitasFornecedorPage);
   }
   
   linkDespesas(){
