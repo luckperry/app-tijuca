@@ -5,6 +5,7 @@ import { GeralPage } from '../geral/geral-page/geral-page';
 import { DespesasPage } from '../despesas/despesas/despesas';
 import { RotasPage } from '../rotas/rotas';
 import { ArlaPostoPage } from '../arla-32/arla-posto/arla-posto';
+import { ReceitasFornecedorPage } from '../receitas/receita-fornecedor/receita-fornecedor';
 
 @IonicPage()
 @Component({
