@@ -1,21 +1,14 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import { ViagensPage } from "../viagens/viagens";
-
-/**
- * Generated class for the Abastecimento4Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+// import { ViagensPage } from "../viagens/viagens";
 
 @IonicPage()
 @Component({
-  selector: 'page-abastecimento4',
-  templateUrl: 'abastecimento4.html',
+  selector: 'page-abastecimento-bomba-2',
+  templateUrl: 'abastecimento-bomba-2.html',
 })
-export class Abastecimento4Page {
+export class AbastecimentoBomba2Page {
 
   preco;
   litros;

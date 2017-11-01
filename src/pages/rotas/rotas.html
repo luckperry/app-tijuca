@@ -1,15 +1,15 @@
 <ion-content padding>
     
-      <page-abastecimento *ngIf= "abastecimento"></page-abastecimento>
+      <page-abastecimento-pagamento *ngIf= "abastecimento"></page-abastecimento-pagamento>
       <button ion-button *ngIf= "abastecimento" (click)="abastecimento = false; abastecimento2 = true" class="passar">Próximo1</button>
     
-      <page-abastecimento2 *ngIf= "abastecimento2"></page-abastecimento2>
+      <page-abastecimento-odometro *ngIf= "abastecimento2"></page-abastecimento-odometro>
       <button ion-button *ngIf= "abastecimento2" (click)="abastecimento2 = false; abastecimento3 = true" class="passar">Próximo2</button>
     
-      <page-abastecimento3 *ngIf= "abastecimento3"></page-abastecimento3>
+      <page-abastecimento-bomba-1 *ngIf= "abastecimento3"></page-abastecimento-bomba-1>
       <button ion-button *ngIf= "abastecimento3" (click)="abastecimento3 = false; abastecimento4 = true" class="passar">Próximo3</button>
     
-      <page-abastecimento4 *ngIf= "abastecimento4" class="passar"></page-abastecimento4>
+      <page-abastecimento-bomba-2 *ngIf= "abastecimento4" class="passar"></page-abastecimento-bomba-2>
       <button ion-button *ngIf= "abastecimento4" (click)="linkVoltar();">Finalizar</button>
       
      
