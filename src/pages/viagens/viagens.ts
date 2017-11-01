@@ -3,9 +3,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { ReceitasPage } from '../receitas/receitas';
 import { DespesasPage } from '../despesas/despesas/despesas';
-import { Arla32Page } from '../arla32/arla32';
 import { GeralPage } from '../geral/geral';
 import { RotasPage } from '../rotas/rotas';
+import { ArlapostoPage } from '../arla-32/arla-posto/arlaposto';
 
 @IonicPage()
 @Component({
@@ -30,7 +30,7 @@ export class ViagensPage {
   }
 
   linkArla32(){
-    this.navCtrl.push(Arla32Page);
+    this.navCtrl.push(ArlapostoPage);
   }
 
   linkGeral(){
