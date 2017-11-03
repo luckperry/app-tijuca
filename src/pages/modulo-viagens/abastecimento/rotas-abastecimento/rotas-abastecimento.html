@@ -1,0 +1,30 @@
+<ion-content>
+  
+      
+  
+    <ion-slides pager>
+      <ion-slide>
+          <page-abastecimento-pagamento></page-abastecimento-pagamento>
+      </ion-slide>
+      <ion-slide>
+          <page-abastecimento-odometro></page-abastecimento-odometro>
+      </ion-slide>
+      <ion-slide>
+          <page-abastecimento-bomba-1></page-abastecimento-bomba-1>
+      </ion-slide>
+      <ion-slide>
+          <page-abastecimento-bomba-2></page-abastecimento-bomba-2>
+      </ion-slide>
+  </ion-slides>
+  <ion-fab right bottom>
+      <button ion-fab color="primary" (click)="toGo()">
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
+  </ion-fab>
+  <ion-fab left bottom>
+      <button ion-fab color="primary" (click)="toBack()">
+      <ion-icon color="warning" name="ios-arrow-back"></ion-icon>
+      </button>
+  </ion-fab>
+       
+      </ion-content>

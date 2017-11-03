@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { GeralPage } from '../geral/geral-page/geral-page';
-import { DespesasPage } from '../despesas/despesas/despesas';
-import { RotasPage } from '../rotas/rotas';
+import { DespesasPage } from '../despesas/despesas/despesas'; 
 import { ArlaPostoPage } from '../arla-32/arla-posto/arla-posto';
 import { ReceitasFornecedorPage } from '../receitas/receita-fornecedor/receita-fornecedor';
+import { RotasAbastecimentoPage } from '../abastecimento/rotas-abastecimento/rotas-abastecimento';
 
 @IonicPage()
 @Component({
@@ -38,7 +38,7 @@ export class ViagensPage {
   }
 
   linkAbastecimento(){
-    this.navCtrl.push(RotasPage);
+    this.navCtrl.push(RotasAbastecimentoPage);
   }
 
 }
