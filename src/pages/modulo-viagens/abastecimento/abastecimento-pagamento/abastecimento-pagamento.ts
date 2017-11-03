@@ -7,18 +7,10 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'abastecimento-pagamento.html',
 })
 export class AbastecimentoPagamentoPage {
-
-
   pagamento;
   data;
   tipo;
-  posto;
-
-    
-  // abastecimento(){
-  //   this.navCtrl.push(Abastecimento2Page);
-  // }
-
+  posto; 
   constructor(public navCtrl: NavController) {
   }
 

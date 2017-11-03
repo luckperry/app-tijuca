@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { ViagensPage } from '../../viagens/viagens';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular'; 
 import { GeralDadosViagemPage } from '../geral-dados-viagem/geral-dados-viagem';
 import { GeralDadosMotoristaPage } from '../geral-dados-motorista/geral-dados-motorista';
 

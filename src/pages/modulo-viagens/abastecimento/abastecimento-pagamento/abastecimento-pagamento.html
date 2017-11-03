@@ -1,44 +1,39 @@
-<ion-content padding>
-
-  <h1>Pagamento</h1>
-
-
-  <ion-list>
+<ion-header>
+  <ion-title padding>Pagamento</ion-title>
+</ion-header>
+<ion-list>
 
 
-    <ion-item>
-      <ion-label>Tipo</ion-label>
-      <ion-select [(ngModel)]="tipo">
-        <ion-option value="externo">Externo</ion-option>
-        <ion-option value="interno">Interno</ion-option>
-      </ion-select>
-    </ion-item>
+  <ion-item>
+    <ion-label>Tipo</ion-label>
+    <ion-select [(ngModel)]="tipo">
+      <ion-option value="externo">Externo</ion-option>
+      <ion-option value="interno">Interno</ion-option>
+    </ion-select>
+  </ion-item>
 
-    <ion-item>
-      <ion-label floating>Posto</ion-label>
-      <ion-input type="text" [(ngModel)]="posto"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-label floating>Posto</ion-label>
+    <ion-input type="text" [(ngModel)]="posto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Data</ion-label>
+    <ion-input type="date" [(ngModel)]="data"></ion-input>
+  </ion-item>
 
 
-    <ion-item>
-      <ion-label>Data</ion-label>
-      <ion-input type="date" [(ngModel)]="data"></ion-input>
-    </ion-item>
-
-
-    <ion-item>
-      <ion-label>Tipo de pagamento</ion-label>
-      <ion-select [(ngModel)]="pagamento">
-        <ion-option value="Dinheiro">Dinheiro</ion-option>
-        <ion-option value="crédito">Crédito</ion-option>
-        <ion-option value="Débito"> Débito</ion-option>
-        <ion-option value="Cheque">Cheque</ion-option>
-      </ion-select>
-    </ion-item>
-    <!--
+  <ion-item>
+    <ion-label>Tipo de pagamento</ion-label>
+    <ion-select [(ngModel)]="pagamento">
+      <ion-option value="Dinheiro">Dinheiro</ion-option>
+      <ion-option value="crédito">Crédito</ion-option>
+      <ion-option value="Débito"> Débito</ion-option>
+      <ion-option value="Cheque">Cheque</ion-option>
+    </ion-select>
+  </ion-item>
+  <!--
        <br> Tipo: {{tipo}} <br> Posto: {{posto}} <br> data:
         {{data}} <br> Pagamento: {{pagamento}}
     -->
-  </ion-list>
-
-</ion-content>
+</ion-list>
