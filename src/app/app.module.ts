@@ -21,16 +21,10 @@ import { AbastecimentoPagamentoPage } from '../pages/modulo-viagens/abasteciment
 import { AbastecimentoOdometroPage } from '../pages/modulo-viagens/abastecimento/abastecimento-odometro/abastecimento-odometro';
 import { AbastecimentoBomba1Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
 import { AbastecimentoBomba2Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
-<<<<<<< HEAD
 import { RotasAbastecimentoPage } from '../pages/modulo-viagens/abastecimento/rotas-abastecimento/rotas-abastecimento';
- 
-=======
 
-import { RotasPage } from '../pages/modulo-viagens/rotas/rotas';
 import { RotasArlaPage } from '../pages/modulo-viagens/arla-32/rotas-arla/rotas-arla';
 
-
->>>>>>> 1678c4be715a778823a3c0c1613d74a3873b57b9
 import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
 
@@ -49,12 +43,8 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoOdometroPage,
     AbastecimentoBomba1Page,
     AbastecimentoBomba2Page,
-<<<<<<< HEAD
     RotasAbastecimentoPage, 
-=======
-    RotasPage,
     RotasArlaPage,
->>>>>>> 1678c4be715a778823a3c0c1613d74a3873b57b9
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
     ArlaPagPage,
@@ -79,13 +69,9 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoPagamentoPage,
     AbastecimentoOdometroPage,
     AbastecimentoBomba1Page,
-<<<<<<< HEAD
     RotasAbastecimentoPage, 
-=======
     AbastecimentoBomba2Page,
-    RotasPage,
     RotasArlaPage,
->>>>>>> 1678c4be715a778823a3c0c1613d74a3873b57b9
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
     ArlaPagPage,
