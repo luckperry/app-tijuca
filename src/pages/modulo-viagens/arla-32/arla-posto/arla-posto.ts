@@ -12,7 +12,5 @@ export class ArlaPostoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  linkArlaPage(){
-    this.navCtrl.push(ArlaPagPage);
-  }
+ 
 }
