@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ReceitasQntPage } from '../receitas-qnt/receitas-qnt';
-
 @IonicPage()
 @Component({
   selector: 'page-receita-fornecedor',
@@ -16,8 +14,5 @@ export class ReceitasFornecedorPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReceitasPage');
   }
-  linkReceitas2(){
-    this.navCtrl.push(ReceitasQntPage);
-  }
-
+ 
 }

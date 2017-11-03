@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ReceitasFotoPage } from '../receitas-foto/receitas-foto';
 
 @IonicPage()
 @Component({
@@ -36,7 +35,5 @@ export class ReceitasQntPage {
     }
   }
 
-  linkReceitas3() {
-    this.navCtrl.push(ReceitasFotoPage);
-  }
+
 }
