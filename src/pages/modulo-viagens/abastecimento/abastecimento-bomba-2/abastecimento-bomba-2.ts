@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
-// import { ViagensPage } from "../viagens/viagens";
+import { AlertController } from 'ionic-angular'; 
 
 @IonicPage()
 @Component({
