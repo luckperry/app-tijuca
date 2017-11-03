@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-import { AlertController } from 'ionic-angular'; 
-import { ViagensPage } from '../../viagens/viagens';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';import { AlertController } from 'ionic-angular'; 
 
 @IonicPage()
 @Component({
@@ -29,6 +26,5 @@ export class ArlaPagPage {
       buttons: ['OK']
     });
     alert.present();
-    this.navCtrl.push(ViagensPage);
   }
 }
