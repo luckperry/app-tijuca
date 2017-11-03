@@ -1,30 +1,27 @@
-<ion-header> 
-        <ion-title padding>Bomba 1</ion-title> 
-    
-    </ion-header>
-    
-    
-        <ion-item>
-            <ion-label floating>Litros</ion-label>
-            <ion-input type="float" min = "0" [(ngModel)]="litros"></ion-input>
-        </ion-item>
-    
-        <ion-item>
-            <ion-label floating>Preço/L</ion-label>
-            <ion-input type="float" min = "0" [(ngModel)]="preco"></ion-input>
-        </ion-item>
-        
-      <br>
-    
-      <ion-item>
-        <label for="file">  
-          <img src="../assets/img/camera.png"/>
-        </label>
-        <input type="file" name="file" id="file" hidden="">
-      </ion-item>
-    
-    <!--
+<ion-header>
+    <ion-title padding>Bomba 1</ion-title>
+
+</ion-header>
+
+
+<ion-item>
+    <ion-label floating>Litros</ion-label>
+    <ion-input type="float" min="0" [(ngModel)]="litros"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label floating>Preço/L</ion-label>
+    <ion-input type="float" min="0" [(ngModel)]="preco"></ion-input>
+</ion-item>
+
+<br>
+
+
+<img src="{{ultimaFoto}}" />
+<img src="../assets/img/camera.png" (click)="getFoto('picture')" />
+
+
+<!--
         Preço: {{preco}}<br>
         Litros: {{litros}}
     -->
-    
