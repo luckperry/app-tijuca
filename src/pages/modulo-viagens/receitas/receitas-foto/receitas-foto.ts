@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 
-import { ViagensPage } from '../../viagens/viagens';
-
 @IonicPage()
 @Component({
   selector: 'page-receitas-foto',
@@ -19,7 +17,6 @@ export class ReceitasFotoPage {
         duration: 3000 
       });
       toast.present();
-      this.navCtrl.setRoot(ViagensPage);
     }
 }
 

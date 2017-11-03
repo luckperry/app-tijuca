@@ -22,9 +22,8 @@ import { AbastecimentoOdometroPage } from '../pages/modulo-viagens/abastecimento
 import { AbastecimentoBomba1Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
 import { AbastecimentoBomba2Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
 
-import { RotasPage } from '../pages/modulo-viagens/rotas/rotas';
 import { RotasArlaPage } from '../pages/modulo-viagens/arla-32/rotas-arla/rotas-arla';
-
+import { RotasReceitasPage } from '../pages/modulo-viagens/receitas/rotas-receitas/rotas-receitas';
 
 import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
@@ -48,6 +47,7 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoBomba2Page,
     RotasPage,
     RotasArlaPage,
+    RotasReceitasPage,
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
     ArlaPagPage,
@@ -74,6 +74,7 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoBomba1Page,
     AbastecimentoBomba2Page,
     RotasPage,
+    RotasReceitasPage,
     RotasArlaPage,
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,

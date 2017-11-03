@@ -1,17 +1,10 @@
-<!--
-  Generated template for the Receitas2Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-  <ion-navbar>
-    <ion-title>Faturamento</ion-title>
-  </ion-navbar>
+
+  <ion-title padding>Quantidade</ion-title>
+
 </ion-header>
 
 
-<ion-content padding>
 
 
   <ion-list>
@@ -27,31 +20,31 @@
         <ion-option value="8">M - Metro</ion-option>
         <ion-option value="3">ML - Mililitro</ion-option>
         <ion-option value="24">PC - Pacote (C/50)</ion-option>
-        <ion-option value="23">PC - Pacote (C/100)</ion-option> 
-        <ion-option value="25">PC - Peca </ion-option> 
+        <ion-option value="23">PC - Pacote (C/100)</ion-option>
+        <ion-option value="25">PC - Peca </ion-option>
         <ion-option value="21">SC - Saca</ion-option>
         <ion-option value="7">TN - Tonelada</ion-option>
         <ion-option value="4">UN - Unidade</ion-option>
       </ion-select>
     </ion-item>
-  </ion-list>  
+  </ion-list>
 
   <div *ngIf="apareceBandeja()">
     <ion-item>
-    <ion-label floating>Bandeja</ion-label>
-    <ion-select [(ngModel)]="idUnidadeBandeja">
-      <ion-option value="5">BD - Bandeja</ion-option>
-      <ion-option value="11">B1 - Bandeja c/12</ion-option>
-      <ion-option value="9">B2 - Bandeja c/20</ion-option>
-      <ion-option value="13">B3 - Bandeja c/18</ion-option> 
-      <ion-option value="12">B5 - Bandeja c/15</ion-option>
-      <ion-option value="10">B6 - Bandeja c/6</ion-option> 
-    </ion-select>
-  </ion-item>
-  </div> 
-  
+      <ion-label floating>Bandeja</ion-label>
+      <ion-select [(ngModel)]="idUnidadeBandeja">
+        <ion-option value="5">BD - Bandeja</ion-option>
+        <ion-option value="11">B1 - Bandeja c/12</ion-option>
+        <ion-option value="9">B2 - Bandeja c/20</ion-option>
+        <ion-option value="13">B3 - Bandeja c/18</ion-option>
+        <ion-option value="12">B5 - Bandeja c/15</ion-option>
+        <ion-option value="10">B6 - Bandeja c/6</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
   <div *ngIf="apareceCaixa()">
-      <ion-item>
+    <ion-item>
       <ion-label floating>Caixa</ion-label>
       <ion-select [(ngModel)]="idUnidadeBandeja">
         <ion-option value="6">CX - Caixa </ion-option>
@@ -60,38 +53,34 @@
         <ion-option value="19">CA - Caixa 12 BD / 30 Ovos</ion-option>
         <ion-option value="18">C2 - Caixa 30 BD / 6 Ovos</ion-option>
         <ion-option value="16">C3 - Caixa 30 BD / 12 Ovos</ion-option>
-        <ion-option value="17">C6 - Caixa 60 BD / 6 Ovos</ion-option> 
+        <ion-option value="17">C6 - Caixa 60 BD / 6 Ovos</ion-option>
       </ion-select>
     </ion-item>
-    </div> 
+  </div>
 
-    
-      <ion-item>
-        <ion-label floating>Qnt Faturado (Numeros)</ion-label>
-        <ion-input type="number" min="0"></ion-input>
-      </ion-item>
 
-      <ion-item>
-        <ion-label floating>Qnt Descarregado (Numeros)</ion-label>
-        <ion-input [(ngModel)]="qntDescarregado" type="number" min="0"></ion-input>
-      </ion-item>
+  <ion-item>
+    <ion-label floating>Qnt Faturado (Numeros)</ion-label>
+    <ion-input type="number" min="0"></ion-input>
+  </ion-item>
 
-      <ion-item>
-          <ion-label floating>Valor Unitário</ion-label>
-          <ion-input [(ngModel)]="valorUnitario" type="number" min="0"></ion-input>
-        </ion-item>  
-        <ion-item>
-          <ion-label floating>Valor Total</ion-label>
-          <ion-input type="number" disabled=""  [value] = "preco()"></ion-input>
-        </ion-item>  
+  <ion-item>
+    <ion-label floating>Qnt Descarregado (Numeros)</ion-label>
+    <ion-input [(ngModel)]="qntDescarregado" type="number" min="0"></ion-input>
+  </ion-item>
 
-       <!--
+  <ion-item>
+    <ion-label floating>Valor Unitário</ion-label>
+    <ion-input [(ngModel)]="valorUnitario" type="number" min="0"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Valor Total</ion-label>
+    <ion-input type="number" disabled="" [value]="preco()"></ion-input>
+  </ion-item>
+
+  <!--
 
        ({{qntDescarregado}}*{{valorUnitario}}) <br>
         {{total}}
        -->
-  <a (click)="linkReceitas3();">
-    <button ion-button full color="primary">Próximo</button>
-  </a>
-  <br>  
-</ion-content>
+ 

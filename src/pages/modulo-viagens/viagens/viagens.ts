@@ -5,7 +5,7 @@ import { GeralPage } from '../geral/geral-page/geral-page';
 import { DespesasPage } from '../despesas/despesas/despesas';
 import { RotasPage } from '../rotas/rotas';
 import { RotasArlaPage } from '../arla-32/rotas-arla/rotas-arla';
-import { ReceitasFornecedorPage } from '../receitas/receita-fornecedor/receita-fornecedor';
+import { RotasReceitasPage } from '../receitas/rotas-receitas/rotas-receitas';
 
 @IonicPage()
 @Component({
@@ -22,7 +22,7 @@ export class ViagensPage {
   }
 
   linkReceitas(){
-    this.navCtrl.push(ReceitasFornecedorPage);
+    this.navCtrl.push(RotasReceitasPage);
   }
   
   linkDespesas(){

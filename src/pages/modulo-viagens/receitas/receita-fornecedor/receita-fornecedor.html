@@ -1,35 +1,31 @@
-<ion-header> 
-  <ion-navbar>
-    <ion-title>Faturamento</ion-title>
-  </ion-navbar> 
-</ion-header> 
-<ion-content padding>
-  <ion-list>
-    
-      <ion-item>
-        <ion-label floating>Fornecedor / Origem</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label floating>Fornecedor / Destino</ion-label>
-        <ion-input type="text" name="art"></ion-input>
-      </ion-item>
+<ion-header>
+  
+  <ion-title padding>Fornecedor</ion-title>
 
-      <ion-item>
-        <ion-label floating>Produto</ion-label>
-        <ion-input type="text" name="arthur"></ion-input>
-      </ion-item> 
-        <ion-item>
-          <ion-label floating>Tipo de Pagamento</ion-label>
-          <ion-select [(ngModel)]="pagamento">
-            <ion-option value="proprio">Próprio</ion-option>
-            <ion-option value="tercerizado">Tercerizado</ion-option>
-            <ion-option value="quarterizado">Quarterizado</ion-option>
-          </ion-select>
-        </ion-item> 
-      </ion-list>
-      <a (click)="linkReceitas2();">
-      <button ion-button full color="primary">Próximo</button>
-      </a>      
-</ion-content>
+</ion-header>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Fornecedor / Origem</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Fornecedor / Destino</ion-label>
+      <ion-input type="text" name="art"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Produto</ion-label>
+      <ion-input type="text" name="arthur"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Tipo de Pagamento</ion-label>
+      <ion-select [(ngModel)]="pagamento">
+        <ion-option value="proprio">Próprio</ion-option>
+        <ion-option value="tercerizado">Tercerizado</ion-option>
+        <ion-option value="quarterizado">Quarterizado</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
