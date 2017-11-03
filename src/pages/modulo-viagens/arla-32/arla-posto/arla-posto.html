@@ -1,12 +1,12 @@
 <ion-header>
-    <ion-navbar>
+
     <ion-title>
        Arla 32
     </ion-title>
-  </ion-navbar>
+
   </ion-header>
   
-  <ion-content>
+ 
   
     <ion-list>
       <ion-item>
@@ -33,12 +33,12 @@
         </ion-item>
   
         <ion-item>
-            <ion-label>Foto Odômetro</ion-label>
-            <ion-input type = "file"></ion-input>
-          </ion-item>
+          <label for="file">  
+            <img src="../assets/img/camera.png"/>
+          </label>
+          <input type="file" name="file" id="file" hidden="">
+        </ion-item>
   
     </ion-list>
   
-    <button ion-button full (click) = "linkArlaPage()">Próximo</button>
   
-  </ion-content>

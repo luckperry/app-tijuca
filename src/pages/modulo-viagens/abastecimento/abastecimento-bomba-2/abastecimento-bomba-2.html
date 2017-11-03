@@ -14,7 +14,12 @@
     <ion-label floating>Preço/L</ion-label>
     <ion-input type="float" min="0" [(ngModel)]="preco"></ion-input>
   </ion-item>
-  <input type="file">
+  <ion-item>
+    <label for="file">  
+      <img src="../assets/img/camera.png"/>
+    </label>
+    <input type="file" name="file" id="file" hidden="">
+  </ion-item>
   <!--
   <br> Preço: {{preco}}
   <br> Litros: {{litros}}
