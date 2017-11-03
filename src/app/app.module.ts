@@ -21,14 +21,16 @@ import { AbastecimentoPagamentoPage } from '../pages/modulo-viagens/abasteciment
 import { AbastecimentoOdometroPage } from '../pages/modulo-viagens/abastecimento/abastecimento-odometro/abastecimento-odometro';
 import { AbastecimentoBomba1Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
 import { AbastecimentoBomba2Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
+import { RotasAbastecimentoPage } from '../pages/modulo-viagens/abastecimento/rotas-abastecimento/rotas-abastecimento';
 
 import { RotasArlaPage } from '../pages/modulo-viagens/arla-32/rotas-arla/rotas-arla';
+<<<<<<< HEAD
 import { RotasReceitasPage } from '../pages/modulo-viagens/receitas/rotas-receitas/rotas-receitas';
+=======
+>>>>>>> f1d60d856806af44ad000df921d2400eea027106
 
 import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
-
-
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoOdometroPage,
     AbastecimentoBomba1Page,
     AbastecimentoBomba2Page,
-    RotasPage,
+    RotasAbastecimentoPage, 
     RotasArlaPage,
     RotasReceitasPage,
     GeralDadosViagemPage,
@@ -72,9 +74,13 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
     AbastecimentoPagamentoPage,
     AbastecimentoOdometroPage,
     AbastecimentoBomba1Page,
+    RotasAbastecimentoPage, 
     AbastecimentoBomba2Page,
+<<<<<<< HEAD
     RotasPage,
     RotasReceitasPage,
+=======
+>>>>>>> f1d60d856806af44ad000df921d2400eea027106
     RotasArlaPage,
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
