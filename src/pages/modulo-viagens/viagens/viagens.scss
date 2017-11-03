@@ -1,5 +1,4 @@
-page-viagens {
-        
+page-viagens { 
         .modulos{
             width: 100%;
             height: 100%;
@@ -12,22 +11,14 @@ page-viagens {
             font-family: arial;
             font-size: 20px;
             
-        }
-    
+        } 
         .space-col{
             border: none;
-        }
-    
+        }    
         .space-row{
             margin: 0px 0px;
             
-        }
-    
-       /*
-        .row{
-            height: 28%;
-        }
-    */
+        } 
             .card-background-page{
                 width: 100%; 
             }
@@ -48,9 +39,9 @@ page-viagens {
                 border-radius: 5%;
               }
               .card-md:hover{
-                //   background-color: #0B4D8E;
+                // background-color: #0B4D8E;
                 background-color: #135F8C;              
-                //background-color: rgb(211, 16, 51);
+                // background-color: rgb(211, 16, 51);
               }
               .card-xd{
                 width: 81%;
@@ -63,9 +54,9 @@ page-viagens {
                 border-radius: 5%;
               }
               .card-xd:hover{
-                //   background-color: #0B4D8E;
+                // background-color: #0B4D8E;
                 background-color: #135F8C;              
-                //background-color: rgb(211, 16, 51);
+                // background-color: rgb(211, 16, 51);
               }
               .card-title {
                 position: absolute;
