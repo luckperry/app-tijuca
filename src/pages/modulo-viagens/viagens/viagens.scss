@@ -1,3 +1,168 @@
+<<<<<<< HEAD
+page-viagens {
+
+    .grid{
+        margin-top: 3vh;
+        margin-left: 4vw;
+    }
+    .row, 
+    .column {
+        box-sizing: border-box;
+    }
+    
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    
+    .row:after {
+        clear: both;
+    }
+    
+    .column {
+        position: relative;
+        float: left;
+        display: block;
+    }
+    
+    .column + .column {
+        margin-left: 5vh;
+    }
+    
+   
+    
+    @media only screen and (max-width: 550px) {
+        .column-1, 
+        .column-2, 
+        .column-3, 
+        .column-4, 
+        .column-5, 
+        .column-6 {
+            float: none;
+            width: auto;
+        }
+      
+        .column + .column {
+            margin-left: 5vw;
+        }
+    }
+
+    .column {
+        background: #135F8C;
+        border: 1px solid #ccc;
+        border-radius: 5%;
+        color: white;
+        padding: 5px;
+        height: 20vh;
+        margin-left: 2vw;
+        width: 40vw;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .column:hover{
+        background: rgb(211, 18, 18);
+    }
+    
+    .row {
+        margin-bottom: 2vh;
+    }
+    
+    .p {
+      font-size: 10px;
+      text-align: center;
+      padding-top: 100px;
+    }
+        
+    //     .modulos{
+    //         width: 100%;
+    //         height: 100%;
+    //         margin: 0px auto;
+    //     }
+    //     .col{
+    //         border: 1px solid black;
+    //         border-radius: 3px;
+    //         text-align: center;
+    //         font-family: arial;
+    //         font-size: 20px;
+            
+    //     }
+    
+    //     .space-col{
+    //         border: none;
+    //     }
+    
+    //     .space-row{
+    //         margin: 0px 0px;
+            
+    //     }
+    
+    //    /*
+    //     .row{
+    //         height: 28%;
+    //     }
+    // */
+    //         .card-background-page{
+    //             width: 100%; 
+    //         }
+    //           ion-card {
+    //             position: relative;
+    //             text-align: center;
+    //             height:20%;
+    //           }
+    
+    //           .card-md{
+    //             width: 42%;
+    //             float: left;
+    //             margin-right: -2%;
+    //             margin-top: 0%;
+    //             margin-left: 5%;
+    //             // background-color: #135F8C;
+    //             background-color: #0B4D8E;            
+    //             border-radius: 5%;
+    //           }
+    //           .card-md:hover{
+    //             //   background-color: #0B4D8E;
+    //             background-color: #135F8C;              
+    //             //background-color: rgb(211, 16, 51);
+    //           }
+    //           .card-xd{
+    //             width: 81%;
+    //             float: left;
+    //             margin-right: -2%;
+    //             margin-top: 0%;
+    //             margin-left: 11%;
+    //             // background-color: #135F8C; 
+    //             background-color: #27ae60;            
+    //             border-radius: 5%;
+    //           }
+    //           .card-xd:hover{
+    //             //   background-color: #0B4D8E;
+    //             background-color: #135F8C;              
+    //             //background-color: rgb(211, 16, 51);
+    //           }
+    //           .card-title {
+    //             position: absolute;
+    //             top: 5%;
+    //             font-size: 160%;
+    //             width: 100%;
+    //             font-weight: bold;
+    //             color: #fff;
+    //           }
+    //           .card-title-xd {
+    //             position: absolute;
+    //             top: 5%;
+    //             font-size: 160%;
+    //             width: 100%;
+    //             font-weight: bold;
+    //             color: #fff;
+    //           }
+    //           .central{
+    //               background-color: red; 
+    //               margin-left: 7%;
+    //           }
+=======
 page-viagens { 
         .modulos{
             width: 100%;
@@ -78,6 +243,7 @@ page-viagens {
                   background-color: red; 
                   margin-left: 7%;
               }
+>>>>>>> 3109dc87d6d2bb243835a5b1bd55495b49bf2b82
               
     }
  

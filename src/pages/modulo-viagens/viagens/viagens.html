@@ -9,7 +9,7 @@
 
 <ion-content class="card-background-page">
 
-  <a (click)="linkAbastecimento()">
+  <!-- <a (click)="linkAbastecimento()">
     <ion-card class="card-xd">
       <img class="imagem-xd" src="../assets/img/frotas2.png" />
       <div class="card-title-xd">Abastecimento</div>
@@ -51,5 +51,20 @@
       <img class="imagem-xd" src="../assets/img/fabrica_racao_logo2.png" />
       <div class="card-title-xd">Relatórios</div>
     </ion-card>
-  </a>
+  </a> -->
+
+  <div class="grid">
+      <div class="row">
+        <div class="column" (click)="linkAbastecimento()">Abastecimento</div>
+        <div class="column" (click)="linkGeral()">Geral</div>
+      </div>
+      <div class="row">
+        <div class="column" (click)="linkArla32()">Arla 32</div>
+        <div class="column" (click)="linkDespesas()">Gastos</div>
+      </div>
+      <div class="row">
+        <div class="column" (click)="linkReceitas()">Receitas</div>
+        <div class="column">Relatórios</div>
+      </div>
+    </div>
 </ion-content>
