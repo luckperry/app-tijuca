@@ -9,7 +9,7 @@
 
 <ion-content class="card-background-page">
 
-      <a (click)="linkViagens()">
+  <!-- <a (click)="linkViagens()">
         <ion-card class="card-md">
           <img class="imagem" src="../assets/img/frotas2.png"/>
           <div class="card-title">Viagens</div>
@@ -49,5 +49,20 @@
           <img class="imagem" src="../assets/img/suporte2.png"/>
           <div class="card-title">Suporte</div>
         </ion-card>
-      </a>
+      </a> -->
+  <div class="grid">
+    <div class="row">
+      <div class="column" (click)="linkViagens()">Viagens</div>
+      <div class="column">Caixa</div>
+    </div>
+    <div class="row">
+      <div class="column">Vendas</div>
+      <div class="column">Cheque</div>
+    </div>
+    <div class="row">
+      <div class="column">Fábrica</div>
+      <div class="column">Suporte</div>
+    </div>
+  </div>
+
 </ion-content>

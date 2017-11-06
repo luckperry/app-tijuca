@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import { ViagensPage } from '../../viagens/viagens';
 
 
 @IonicPage()
@@ -22,7 +21,7 @@ export class DespesasPage {
       buttons: ['OK']
     });
     alert.present();
-    this.navCtrl.push(ViagensPage);
+    this.navCtrl.pop();
   }
 
 }
