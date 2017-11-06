@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AbastecimentoBomba2Page } from "../abastecimento-bomba-2/abastecimento-bomba-2";
+import { IonicPage, NavController, NavParams } from 'ionic-angular'; 
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
@@ -10,14 +10,30 @@ import { AbastecimentoBomba2Page } from "../abastecimento-bomba-2/abastecimento-
 export class AbastecimentoBomba1Page {
   preco;
   litros;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  ultimaFoto;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera) {
   }
+  getFoto(type) {
 
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      sourceType: type == "picture" ? this.camera.PictureSourceType.CAMERA : this.camera.PictureSourceType.SAVEDPHOTOALBUM,
+      correctOrientation: true
+    };
 
-  b(){
-    this.navCtrl.push(AbastecimentoBomba2Page);
+    this.camera.getPicture(options).then((imageData) => {
+
+      this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
+
+    }, (err) => {
+      // Handle error
+      console.log('Erro na última foto')
+    });
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad Abastecimento3Page');
   }

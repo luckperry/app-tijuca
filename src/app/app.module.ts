@@ -29,6 +29,7 @@ import { RotasReceitasPage } from '../pages/modulo-viagens/receitas/rotas-receit
 import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
 
+import { Camera } from "@ionic-native/camera";
 @NgModule({
   declarations: [
     MyApp,
@@ -83,6 +84,7 @@ import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-p
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
