@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 
 @IonicPage()
@@ -12,7 +12,7 @@ export class RotasAbastecimentoPage {
 
   public contador: number = 1;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
   } 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RotasPage');
@@ -30,6 +30,13 @@ export class RotasAbastecimentoPage {
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
     if (this.contador == 5) {
+
+      let toast = this.toastCtrl.create({
+        message: 'Abastecimento adicionada com sucesso',
+        duration: 4000
+      });
+      toast.present();
+
       this.navCtrl.pop();
     }
   }

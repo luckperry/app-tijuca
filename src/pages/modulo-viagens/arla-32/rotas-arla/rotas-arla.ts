@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 
 
@@ -14,7 +14,7 @@ export class RotasArlaPage {
 
   contador: number = 1;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController ) {
   }
 
   ionViewDidLoad() {
@@ -33,6 +33,13 @@ export class RotasArlaPage {
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
     if (this.contador == 3) {
+
+      let toast = this.toastCtrl.create({
+        message: 'Arla32 adicionada com sucesso',
+        duration: 5000
+      });
+      toast.present();
+
       this.navCtrl.pop();
     } 
   }
