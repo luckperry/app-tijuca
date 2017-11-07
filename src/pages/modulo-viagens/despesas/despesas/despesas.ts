@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 
@@ -11,17 +11,18 @@ import { AlertController } from 'ionic-angular';
 export class DespesasPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, 
-    public alertCtrl: AlertController) {
+    public toastCtrl: ToastController) {
   }
 
   showAlert() {
-    let alert = this.alertCtrl.create({
-      title: 'Adicionado',
-      subTitle: 'Despesas Adicionadas',
-      buttons: ['OK']
+    
+    let toast = this.toastCtrl.create({
+      message: 'Gastos adicionado com sucesso',
+      duration: 5000
     });
-    alert.present();
+    toast.present();
+    
     this.navCtrl.pop();
-  }
+  } 
 
 }
