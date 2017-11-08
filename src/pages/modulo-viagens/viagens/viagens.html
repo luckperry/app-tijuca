@@ -7,64 +7,31 @@
 </ion-header>
 
 
-<ion-content class="card-background-page">
-
-  <!-- <a (click)="linkAbastecimento()">
-    <ion-card class="card-xd">
-      <img class="imagem-xd" src="../assets/img/frotas2.png" />
-      <div class="card-title-xd">Abastecimento</div>
-    </ion-card>
-  </a>
-  <div class="central">
-
-    <a (click)="linkGeral()">
-      <ion-card class="card-md">
-        <img class="imagem" src="../assets/img/caixa2.png" />
-        <div class="card-title">Geral</div>
-      </ion-card>
-    </a>
-
-
-    <a (click)="linkArla32()">
-      <ion-card class="card-md">
-        <img class="imagem" src="../assets/img/caixa2.png" />
-        <div class="card-title">Arla 32</div>
-      </ion-card>
-    </a>
-
-    <a (click)="linkDespesas()">
-      <ion-card class="card-md">
-        <img class="imagem" src="../assets/img/vendas3.png" />
-        <div class="card-title">Gastos</div>
-      </ion-card>
-    </a>
-
-    <a (click)="linkReceitas()">
-      <ion-card class="card-md">
-        <img class="imagem" src="../assets/img/cheque2.png" />
-        <div class="card-title">Receitas</div>
-      </ion-card>
-    </a>
-  </div>
-  <a href="#">
-    <ion-card class="card-xd">
-      <img class="imagem-xd" src="../assets/img/fabrica_racao_logo2.png" />
-      <div class="card-title-xd">Relatórios</div>
-    </ion-card>
-  </a> -->
-
+<ion-content class="card-background-page"> 
   <div class="grid">
-      <div class="row">
-        <div class="column" (click)="linkAbastecimento()">Abastecimento</div>
-        <div class="column" (click)="linkGeral()">Geral</div>
+    <div class="row">
+      <div class="column" (click)="linkAbastecimento()">Abastecimento 
+        <img class="imagem" src="assets/images/icone-abastecimento.svg" />
       </div>
-      <div class="row">
-        <div class="column" (click)="linkArla32()">Arla 32</div>
-        <div class="column" (click)="linkDespesas()">Gastos</div>
-      </div>
-      <div class="row">
-        <div class="column" (click)="linkReceitas()">Receitas</div>
-        <div class="column">Relatórios</div>
+      <div class="column" (click)="linkGeral()">Geral
+        <img class="imagem" src="assets/images/icone-receitas.svg" />
       </div>
     </div>
+    <div class="row">
+      <div class="column" (click)="linkArla32()">Arla 32
+        <img class="imagem" src="assets/images/truck.svg" />
+      </div>
+      <div class="column" (click)="linkDespesas()">Gastos
+        <img class="imagem" src="assets/images/icone-receitas.svg" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" (click)="linkReceitas()">Receitas
+        <img class="imagem" src="assets/images/icone-receitas.svg" />
+      </div>
+      <div class="column">Relatórios
+        <img class="imagem" src="assets/images/icone-relatorios.svg" />
+      </div>
+    </div>
+  </div>
 </ion-content>
