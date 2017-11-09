@@ -10,9 +10,14 @@ export class AbastecimentoPagamentoPage {
   pagamento;
   data;
   tipo;
-  posto; 
+  campo;
+  
+  myModel: any;
+
   constructor(public navCtrl: NavController) {
-  }
+    this.myModel = {};
+
+   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AbastecimentoPage');

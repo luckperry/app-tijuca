@@ -4,6 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { FormsModule } from '@angular/forms';     
+import { CustomFormsModule } from 'ng2-validation';
+
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/modulo-viagens/home/home/home';
 import { PrincipalPage } from '../pages/principal/principal/principal';
@@ -56,7 +60,9 @@ import { Camera } from "@ionic-native/camera";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp) 
+    IonicModule.forRoot(MyApp),
+    CustomFormsModule,
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

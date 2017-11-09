@@ -17,7 +17,7 @@ export class DespesasPage {
     
     let toast = this.toastCtrl.create({
       message: 'Gastos adicionado com sucesso',
-      duration: 5000
+      duration: 2000
     });
     toast.present();
     

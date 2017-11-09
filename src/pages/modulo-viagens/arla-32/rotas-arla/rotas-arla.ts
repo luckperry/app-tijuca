@@ -36,7 +36,7 @@ export class RotasArlaPage {
 
       let toast = this.toastCtrl.create({
         message: 'Arla32 adicionada com sucesso',
-        duration: 5000
+        duration: 2000
       });
       toast.present();
 
