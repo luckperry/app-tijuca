@@ -12,8 +12,11 @@ export class RotasAbastecimentoPage {
 
   public contador: number = 1;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
-  } 
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {} 
+
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad RotasPage');
   }
@@ -33,10 +36,9 @@ export class RotasAbastecimentoPage {
 
       let toast = this.toastCtrl.create({
         message: 'Abastecimento adicionada com sucesso',
-        duration: 4000
+        duration: 2000
       });
       toast.present();
-
       this.navCtrl.pop();
     }
   }

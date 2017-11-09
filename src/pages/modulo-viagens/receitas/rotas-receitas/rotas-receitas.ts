@@ -35,7 +35,7 @@ export class RotasReceitasPage {
 
       let toast = this.toastCtrl.create({
         message: 'Receita adicionada com sucesso',
-        duration: 5000
+        duration: 2000
       });
       toast.present();
 

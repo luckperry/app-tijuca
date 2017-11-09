@@ -1,27 +1,28 @@
 <ion-content>
+    <div class="fixed-content">
+                
+        <ion-slides pager>
+            <ion-slide>
+                <page-receita-fornecedor></page-receita-fornecedor>
+            </ion-slide>
+            <ion-slide>
+                <page-receitas-foto></page-receitas-foto>
+            </ion-slide>
+            <ion-slide>
+            <page-receitas-qnt></page-receitas-qnt>
+        </ion-slide>
+        </ion-slides>
 
-  <ion-slides pager>
-    <ion-slide>
-        <page-receita-fornecedor></page-receita-fornecedor>
-    </ion-slide>
-    <ion-slide>
-        <page-receitas-foto></page-receitas-foto>
-    </ion-slide>
-    <ion-slide>
-      <page-receitas-qnt></page-receitas-qnt>
-  </ion-slide>
-</ion-slides>
+        <ion-fab right bottom>
+            <button ion-fab color="primary" (click)="toGo()" >
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </button>
+        </ion-fab>
 
-<ion-fab right bottom>
-    <button ion-fab color="primary" (click)="toGo()" >
-        <ion-icon name="ios-arrow-forward"></ion-icon>
-    </button>
-</ion-fab>
-
-<ion-fab left bottom>
-    <button ion-fab color="primary" (click)="toBack()">
-        <ion-icon color="warning" name="ios-arrow-back"></ion-icon>
-    </button>
-</ion-fab>
-
+        <ion-fab left bottom>
+            <button ion-fab color="primary" (click)="toBack()">
+                <ion-icon color="warning" name="ios-arrow-back"></ion-icon>
+            </button>
+        </ion-fab>
+    </div>
 </ion-content>
