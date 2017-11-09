@@ -11,7 +11,7 @@ export class AbastecimentoBomba1Page {
   preco;
   litros;
   ultimaFoto;
-
+  exibirImagem = false;
   constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera) {
   }
   getFoto(type) {
@@ -25,6 +25,9 @@ export class AbastecimentoBomba1Page {
       correctOrientation: true
     };
 
+    this.exibirImagem = true;
+    console.log("O metodo foi acionado")
+
     this.camera.getPicture(options).then((imageData) => {
 
       this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
@@ -33,6 +36,7 @@ export class AbastecimentoBomba1Page {
       // Handle error
       console.log('Erro na última foto')
     });
+
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad Abastecimento3Page');
