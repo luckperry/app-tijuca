@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, ToastController } from 'ionic-angular';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 
 @IonicPage()
@@ -12,8 +13,13 @@ export class RotasReceitasPage {
   @ViewChild(Slides) slides: Slides;
 
   contador: number = 1;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
+  cameraButton: boolean;
+  ultimaFoto: string;
+  exibirImagem: boolean;
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public toastCtrl: ToastController,
+    public camera: Camera) {
   }
 
   ionViewDidLoad() {
@@ -44,4 +50,7 @@ export class RotasReceitasPage {
   }
 
 
+
+
+  
 }
