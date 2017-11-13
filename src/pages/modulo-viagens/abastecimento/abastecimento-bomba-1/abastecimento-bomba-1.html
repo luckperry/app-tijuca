@@ -1,18 +1,22 @@
 <div class="fixed-content">
-<ion-header>
-    <ion-title padding>Bomba 1</ion-title>
-</ion-header>
-<br><br>
-<ion-item>
-    <ion-label floating>Litros</ion-label>
-    <ion-input type="float" min="0" [(ngModel)]="litros"></ion-input>
-</ion-item>
+    <ion-header>
+        <ion-title padding>Bomba 1</ion-title>
+    </ion-header>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<ion-item>
-    <ion-label floating>Preço/L</ion-label>
-    <ion-input type="float" min="0" [(ngModel)]="preco"></ion-input>
-</ion-item> 
+    <ion-item>
+        <ion-label floating>Litros</ion-label>
+        <ion-input type="float" min="0" [(ngModel)]="litros"></ion-input>
+    </ion-item>
 
-<img src="{{ultimaFoto}}" *ngIf = "exibirFoto"/>
-<img src="assets/images/icone-camera.svg" (click)="getFoto('picture')" style="margin-left:40%" *ngIf = "!exibirFoto"/>
+    <ion-item>
+        <ion-label floating>Preço/L</ion-label>
+        <ion-input type="float" min="0" [(ngModel)]="preco"></ion-input>
+    </ion-item>
+
+    <img src="{{ultimaFoto}}" *ngIf="exibirFoto" (click)="getFoto('picture')" />
+    <!-- <img src="assets/images/icone-camera.svg" (click)="getFoto('picture')" style="margin-left:40%" *ngIf = "!exibirFoto"/> -->
 </div>
