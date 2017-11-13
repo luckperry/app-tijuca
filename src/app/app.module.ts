@@ -34,6 +34,7 @@ import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
 
 import { Camera } from "@ionic-native/camera";
+import {FotoServico} from '../pages/funcoes/camera'
 @NgModule({
   declarations: [
     MyApp,
@@ -91,6 +92,7 @@ import { Camera } from "@ionic-native/camera";
     StatusBar,
     SplashScreen,
     Camera,
+    FotoServico,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
