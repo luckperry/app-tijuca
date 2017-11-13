@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
-import {FotoServico} from '../../../funcoes/camera'
+import { FotoServicoProvider } from '../../../../providers/foto-servico/foto-servico'
 
 @IonicPage()
 @Component({
@@ -13,11 +13,13 @@ export class RotasAbastecimentoPage {
 
   public contador: number = 1;
   cameraButton: boolean;
+  fotoBomba1: string;
+  fotoBomba2: string;
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, 
     public toastCtrl: ToastController,
-    public foto: FotoServico
+    public foto: FotoServicoProvider
   ) {} 
 
 
@@ -57,5 +59,14 @@ export class RotasAbastecimentoPage {
     }
   }
 
- 
+  mostrar(){
+    if (this.contador == 3 ){
+      this.fotoBomba1 = this.foto.ultimaFoto;
+      console.log(this.fotoBomba1);
+    }
+    if (this.contador == 4){
+      this.fotoBomba2 = this.foto.ultimaFoto;
+      console.log("bomba 2");
+    }
+  }
 }

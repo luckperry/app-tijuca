@@ -11,9 +11,11 @@
             </ion-slide>
             <ion-slide>
                 <page-abastecimento-bomba-1></page-abastecimento-bomba-1>
+                <img src="{{fotoBomba1}}"/>
             </ion-slide>
             <ion-slide>
                 <page-abastecimento-bomba-2></page-abastecimento-bomba-2>
+                <img src="{{fotoBomba2}}"/>
             </ion-slide>
         </ion-slides>
 
@@ -25,7 +27,7 @@
 
         <ion-fab>
             <button *ngIf="cameraButton" class="button-camera" ion-button outline>
-                <ion-icon name="ios-camera" (click)=" this.foto.getFoto('picture');"></ion-icon>
+                <ion-icon name="ios-camera" (click)=" this.foto.getFoto('picture');mostrar()"></ion-icon>
             </button>
         </ion-fab>
 
