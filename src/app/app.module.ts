@@ -4,6 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { FormsModule } from '@angular/forms';     
+import { CustomFormsModule } from 'ng2-validation';
+
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/modulo-viagens/home/home/home';
 import { PrincipalPage } from '../pages/principal/principal/principal';
@@ -30,6 +34,8 @@ import { ArlaPagPage } from '../pages/modulo-viagens/arla-32/arla-pag/arla-pag';
 import { ArlaPostoPage } from '../pages/modulo-viagens/arla-32/arla-posto/arla-posto';
 
 import { Camera } from "@ionic-native/camera";
+import { FotoServicoProvider } from '../providers/foto-servico/foto-servico';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -56,7 +62,9 @@ import { Camera } from "@ionic-native/camera";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp) 
+    IonicModule.forRoot(MyApp),
+    CustomFormsModule,
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -85,7 +93,8 @@ import { Camera } from "@ionic-native/camera";
     StatusBar,
     SplashScreen,
     Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FotoServicoProvider
   ]
 })
 export class AppModule {}
