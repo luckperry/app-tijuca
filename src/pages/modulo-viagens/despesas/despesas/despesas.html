@@ -6,9 +6,12 @@
  <ion-content padding>
    
    <ion-list>
+
+      <div class="form-group" [class.has-success]="iptDespesa.valid && (iptDespesa.touched)"
+      [class.has-error]="!iptDespesa.valid && (iptDespesa.touched)">
      <ion-item>
        <ion-label floating>Despesas</ion-label>
-       <ion-select [(ngModel)]="despesa">
+       <ion-select [(ngModel)]="despesa" required #iptDespesa="ngModel">
          <ion-option value="1">Lanche</ion-option>
          <ion-option value="2">Almoço</ion-option>
          <ion-option value="3">Jantar</ion-option>
@@ -21,17 +24,25 @@
          <ion-option value="10">Moto taxi</ion-option>
        </ion-select>
      </ion-item>
+     <span class="help-block" *ngIf="iptDespesa.valid && (iptDespesa.touched)">OK!</span>
+     <span class="help-block" *ngIf="!iptDespesa.valid && (iptDespesa.touched)">Campo Obrigatório!</span>
+     </div>
  
      <ion-item>
        <ion-label>Data</ion-label>
        <ion-input type = "date" [(ngModel)] = "data"></ion-input>
      </ion-item>
  
+     <div class="form-group" [class.has-success]="iptValor.valid && (iptValor.touched)"
+     [class.has-error]="!iptValor.valid && (iptValor.touched)">
      <ion-item>
        <ion-label floating>Valor</ion-label>
-       <ion-input type = "float" type = "number" [(ngModel)] = "valor"></ion-input>
+       <ion-input type = "float" type = "number" [(ngModel)] = "valor" required minlength="5" #iptValor="ngModel"></ion-input>
      </ion-item>
- 
+     <span class="help-block" *ngIf="iptValor.valid && (iptValor.touched)">OK!</span>
+     <span class="help-block" *ngIf="!iptValor.valid && (iptValor.touched)">Campo Obrigatório!</span>
+    </div>
+
      <ion-item>
       <label for="file">  
         <img src="assets/images/camera.png"/>
