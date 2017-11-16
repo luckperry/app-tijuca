@@ -4,42 +4,49 @@
 
 
 <ion-list>
-    
-  <ion-item>
-    <ion-label floating>campo</ion-label>
-    <ion-input type="name" [(ngModel)]="myModel.campo" name="campo" #campo="ngModel" required minlength="6"></ion-input>
-  </ion-item>
-  <p ion-text color="danger" *ngIf="campo.errors">ERRORES: {{ campo.errors | json}}</p>
 
-  
-  <ion-item>
-    <ion-label>Tipo</ion-label>
-    <ion-select [(ngModel)]="tipo">
-      <ion-option value="externo">Externo</ion-option>
-      <ion-option value="interno">Interno</ion-option>
-    </ion-select>
-  </ion-item>
+  <div class="form-group" [class.has-success]="iptTipo.valid && (iptTipo.touched)" [class.has-error]="!iptTipo.valid && (iptTipo.touched)">
+    <ion-item>
+      <ion-label>Tipo</ion-label>
+      <ion-select [(ngModel)]="tipo" required #iptTipo="ngModel">
+        <ion-option value="externo">Externo</ion-option>
+        <ion-option value="interno">Interno</ion-option>
+      </ion-select>
+    </ion-item>
+    <span class="help-block" *ngIf="iptTipo.valid && (iptTipo.touched)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptTipo.valid && (iptTipo.touched)">Campo Obrigatório!</span>
+  </div>
 
-  <ion-item>
-    <ion-label floating>Posto</ion-label>
-    <ion-input type="text" [(ngModel)]="posto"></ion-input>
-  </ion-item>
+  <div class="form-group" [class.has-success]="iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" [class.has-error]="!iptPosto.valid && (iptPosto.touched || iptPosto.dirty)">
+    <ion-item>
+      <ion-label floating>Posto</ion-label>
+      <ion-input type="text" [(ngModel)]="posto" required #iptPosto="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
-  <ion-item>
-    <ion-label>Data</ion-label>
-    <ion-input type="date" [(ngModel)]="data"></ion-input>
-  </ion-item>
+  <div class="form-group" [class.has-success]="iptData.valid && (iptData.touched)" [class.has-error]="!iptData.valid && (iptData.touched)">
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-input type="date" [(ngModel)]="data" required #iptData="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptData.valid && (iptData.touched)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptData.valid && (iptData.touched)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
+  <div class="form-group" [class.has-success]="iptPagamento.valid && (iptPagamento.touched)" [class.has-error]="!iptPagamento.valid && (iptPagamento.touched)">
+    <ion-item>
+      <ion-label>Tipo de pagamento</ion-label>
+      <ion-select [(ngModel)]="pagamento" required #iptPagamento="ngModel">
+        <ion-option value="Dinheiro">Dinheiro</ion-option>
+        <ion-option value="crédito">Crédito</ion-option>
+        <ion-option value="Débito"> Débito</ion-option>
+        <ion-option value="Cheque">Cheque</ion-option>
+      </ion-select>
+    </ion-item>
+    <span class="help-block" *ngIf="iptPagamento.valid && (iptPagamento.touched)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptPagamento.valid && (iptPagamento.touched)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
-  <ion-item>
-    <ion-label>Tipo de pagamento</ion-label>
-    <ion-select [(ngModel)]="pagamento">
-      <ion-option value="Dinheiro">Dinheiro</ion-option>
-      <ion-option value="crédito">Crédito</ion-option>
-      <ion-option value="Débito"> Débito</ion-option>
-      <ion-option value="Cheque">Cheque</ion-option>
-    </ion-select>
-  </ion-item> 
-  
 </ion-list>
-

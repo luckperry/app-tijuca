@@ -4,11 +4,14 @@
 
 </ion-header>
 
-
+<div class="form-group" [class.has-success]="iptKm.valid && (iptKm.touched || iptKm.dirty)" [class.has-error]="!iptKm.valid && (iptKm.touched || iptKm.dirty)">
 <ion-item>
   <ion-label floating>Km</ion-label>
-  <ion-input type="number" min="0" [(ngModel)]="km"></ion-input>
+  <ion-input type="number" min="0" [(ngModel)]="km" required #iptKm="ngModel"></ion-input>
 </ion-item>
+<span class="help-block" *ngIf="iptKm.valid && (iptKm.touched || iptKm.dirty)" ion-text color="secondary">OK!</span>
+<span class="help-block" *ngIf="!iptKm.valid && (iptKm.touched || iptKm.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+</div>
 
 <img src="{{ultimaFoto}}" />
 <img src="../assets/img/camera.png" (click)="getFoto('picture')" />
