@@ -5,25 +5,34 @@
 </ion-header>
 
 <ion-list>
-  <ion-item>
-    <ion-label floating>Litros</ion-label>
-    <ion-input type="number" [(ngModel)]="litros"></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label floating>Litro(R$)</ion-label>
-    <ion-input type="number" [(ngModel)]="litro"></ion-input>
-  </ion-item>
+  <div class="form-group" [class.has-success]="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" [class.has-error]="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)">
+    <ion-item>
+      <ion-label floating>Litros</ion-label>
+      <ion-input type="float" min="0" [(ngModel)]="litros" required #iptLitros="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
+
+  <div class="form-group" [class.has-success]="iptLitro2.valid && (iptLitro2.touched || iptLitro2.dirty)" [class.has-error]="!iptLitro2.valid && (iptLitro2.touched || iptLitro2.dirty)">
+    <ion-item>
+      <ion-label floating>Litro(R$)</ion-label>
+      <ion-input type="number" [(ngModel)]="litro" required #iptLitro2="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptLitro2.valid && (iptLitro2.touched || iptLitro2.dirty)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptLitro2.valid && (iptLitro2.touched || iptLitro2.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
   <ion-item>
     <ion-label floating>Total(R$)</ion-label>
     <ion-input type="number" disabled="" [value]="preco()"></ion-input>
   </ion-item>
 
-
+  <div class="form-group" [class.has-success]="iptPagamento.valid && (iptPagamento.touched || iptPagamento.dirty)" [class.has-error]="!iptPagamento.valid && (iptPagamento.touched || iptPagamento.dirty)">
   <ion-item>
     <ion-label floating>Forma Pagamento</ion-label>
-    <ion-select [(ngModel)]="forma">
+    <ion-select [(ngModel)]="forma" required #iptPagamento="ngModel">
       <ion-option value="ext">Boleto Bacário</ion-option>
       <ion-option value="cre">Cartão de Crédito</ion-option>
       <ion-option value="deb">Cartão de Débito</ion-option>
@@ -37,5 +46,8 @@
       <ion-option value="moe">Moedas</ion-option>
     </ion-select>
   </ion-item>
+  <span class="help-block" *ngIf="iptPagamento.valid && (iptPagamento.touched || iptPagamento.dirty)" ion-text color="secondary">OK!</span>
+  <span class="help-block" *ngIf="!iptPagamento.valid && (iptPagamento.touched || iptPagamento.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
 </ion-list>

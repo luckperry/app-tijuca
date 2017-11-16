@@ -2,35 +2,53 @@
 
   <ion-title padding>Arla 32</ion-title>
 
-</ion-header> 
-<ion-list> 
-  <ion-item>
-    <ion-label floating>Tipo Abastecimento</ion-label>
-    <ion-select [(ngModel)]="tipo">
-      <ion-option value="ext">Externo</ion-option>
-      <ion-option value="int">Interno</ion-option>
-    </ion-select>
-  </ion-item>
+</ion-header>
+<ion-list>
+
+  <div class="form-group" [class.has-success]="iptAbast.valid && (iptAbast.touched)" [class.has-error]="!iptAbast.valid && (iptAbast.touched)">
+    <ion-item>
+      <ion-label floating>Tipo Abastecimento</ion-label>
+      <ion-select [(ngModel)]="tipo" required #iptAbast="ngModel">
+        <ion-option value="ext">Externo</ion-option>
+        <ion-option value="int">Interno</ion-option>
+      </ion-select>
+    </ion-item>
+    <span class="help-block" *ngIf="iptAbast.valid && (iptAbast.touched)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptAbast.valid && (iptAbast.touched)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
+
+  <div class="form-group" [class.has-success]="iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" [class.has-error]="!iptPosto.valid && (iptPosto.touched || iptPosto.dirty)">
+    <ion-item>
+      <ion-label floating>Posto Combustivel</ion-label>
+      <ion-input type="text" [(ngModel)]="posto" required #iptPosto="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptPosto.valid && (iptPosto.touched || iptPosto.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
+
+  <div class="form-group" [class.has-success]="iptData.valid && (iptData.touched)" [class.has-error]="!iptData.valid && (iptData.touched)">
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-input type="date" [(ngModel)]="data" required #iptData="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptData.valid && (iptData.touched)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptData.valid && (iptData.touched)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
+
+  <div class="form-group" [class.has-success]="iptKm.valid && (iptKm.touched || iptKm.dirty)" [class.has-error]="!iptKm.valid && (iptKm.touched || iptKm.dirty)">
+    <ion-item>
+      <ion-label floating>Km</ion-label>
+      <ion-input type="number" min="0" [(ngModel)]="km" required #iptKm="ngModel"></ion-input>
+    </ion-item>
+    <span class="help-block" *ngIf="iptKm.valid && (iptKm.touched || iptKm.dirty)" ion-text color="secondary">OK!</span>
+    <span class="help-block" *ngIf="!iptKm.valid && (iptKm.touched || iptKm.dirty)" ion-text color="danger">Campo Obrigatório!</span>
+  </div>
 
   <ion-item>
-    <ion-label floating>Posto Combustivel</ion-label>
-    <ion-input type="text" [(ngModel)]="posto"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Data</ion-label>
-    <ion-input type="date" [(ngModel)]="data"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Km</ion-label>
-    <ion-input type="number" [(ngModel)]="km"></ion-input>
-  </ion-item> 
-  <ion-item>
-    <label for="file">
+  <label for="file">
       <img src="../assets/img/camera.png"/>
     </label>
-    <input type="file" name="file" id="file" hidden="">
-  </ion-item> 
+  <input type="file" name="file" id="file" hidden="">
+  </ion-item>
 
 </ion-list>
