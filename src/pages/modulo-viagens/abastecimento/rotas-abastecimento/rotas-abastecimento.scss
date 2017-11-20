@@ -15,4 +15,20 @@ page-rotas-abastecimento {
         to{opacity: 1;transform: scale(4,4)}
     }
 
+    .img{
+        width: 90vw;
+        height: 20vh;
+        border: 0.5vh solid blue;
+        margin: 0 auto;
+        margin-bottom: 10vh;
+        margin-top: 10vh; 
+        background: url('assets/images/img.png');
+    }
+
+    // .imagem{
+    //     width: 20vw;
+    //     overflow:hidden;
+    //     margin: 0 auto;
+    // }
+
 }

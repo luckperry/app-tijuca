@@ -1,11 +1,6 @@
-<div class="fixed-content">
     <ion-header>
         <ion-title padding>Bomba 1</ion-title>
     </ion-header>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <div class="form-group" [class.has-success]="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" [class.has-error]="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)">
     <ion-item>
@@ -24,3 +19,4 @@
     <span class="help-block" *ngIf="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="secondary">OK!</span>
     <span class="help-block" *ngIf="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="danger">Campo Obrigatório!</span>
     </div>
+
