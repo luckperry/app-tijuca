@@ -1,14 +1,6 @@
     <ion-header>
         <ion-title padding>Bomba 1</ion-title>
-    </ion-header>
-<<<<<<< HEAD
-=======
-    <br>
-    <br>
-    <br>
-    <br> 
->>>>>>> 911295df8f517b46cdff6757e51d37afa010e831
-
+    </ion-header> 
     <div class="form-group" [class.has-success]="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" [class.has-error]="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)">
         <ion-item>
             <ion-label floating>Litros</ion-label>
@@ -18,16 +10,6 @@
         <span class="help-block" *ngIf="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="danger">Campo Obrigatório!</span>
     </div>
     <div class="form-group" [class.has-success]="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" [class.has-error]="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)">
-<<<<<<< HEAD
-    <ion-item>
-        <ion-label floating>Preço/L</ion-label>
-        <ion-input type="float" min="0" [(ngModel)]="preco" required #iptPreco="ngModel"></ion-input>
-    </ion-item>
-    <span class="help-block" *ngIf="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="secondary">OK!</span>
-    <span class="help-block" *ngIf="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="danger">Campo Obrigatório!</span>
-    </div>
-
-=======
         <ion-item>
             <ion-label floating>Preço/L</ion-label>
             <ion-input type="float" min="0" [(ngModel)]="preco" required #iptPreco="ngModel"></ion-input>
@@ -35,4 +17,3 @@
         <span class="help-block" *ngIf="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="secondary">OK!</span>
         <span class="help-block" *ngIf="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="danger">Campo Obrigatório!</span>
     </div>
->>>>>>> 911295df8f517b46cdff6757e51d37afa010e831

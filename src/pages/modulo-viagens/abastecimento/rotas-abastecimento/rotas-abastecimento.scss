@@ -22,7 +22,16 @@ page-rotas-abastecimento {
         margin: 0 auto;
         margin-bottom: 10vh;
         margin-top: 10vh; 
-        background: url('assets/images/img.png');
+        background: url('{{fotoBomba1}}');
+    }   
+    .img2{
+        width: 90vw;
+        height: 20vh;
+        border: 0.5vh solid blue;
+        margin: 0 auto;
+        margin-bottom: 10vh;
+        margin-top: 10vh; 
+        background: url('{{fotoBomba2}}');
     }
 
     // .imagem{
