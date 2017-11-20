@@ -16,7 +16,7 @@
           <ion-option value="1">Lanche</ion-option>
           <ion-option value="2">Almoço</ion-option>
           <ion-option value="3">Jantar</ion-option>
-          <ion-option value="4">Almoçado</ion-option>
+          <!-- <ion-option value="4">Almoçado</ion-option> -->
           <ion-option value="5">Borracharia</ion-option>
           <ion-option value="6">Corrente</ion-option>
           <ion-option value="7">Lavagem de veículos</ion-option>
@@ -39,12 +39,12 @@
     <div class="form-group" [class.has-success]="iptValor.valid && (iptValor.touched || iptValor.dirty)" [class.has-error]="!iptValor.valid && (iptValor.touched || iptValor.dirty)">
       <ion-item>
         <ion-label floating>Valor</ion-label>
-        <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel"></ion-input>
+        <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel" ></ion-input>
       </ion-item>
     </div>
   </ion-list>
 
-  <button ion-button full color="danger" *ngIf="!iptValor.valid || !iptValor.valid || !iptData.valid || !iptDespesa.valid">Adicionar</button>
-  <button ion-button full (click)="showAlert()" *ngIf="iptValor.valid && iptValor.valid && iptData.valid && iptDespesa.valid">Adicionar</button>
+  <button ion-button full color="danger" *ngIf=" !iptValor.valid || !iptData.valid || !iptDespesa.valid">Adicionar</button>
+  <button ion-button full (click)="showAlert()" *ngIf="iptValor.valid && iptData.valid && iptDespesa.valid">Adicionar</button>
 
 </ion-content>

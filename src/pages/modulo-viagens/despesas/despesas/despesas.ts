@@ -8,7 +8,7 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
   templateUrl: 'despesas.html',
 })
 export class DespesasPage {
-
+  valor;
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     public toastCtrl: ToastController) {
   }
@@ -23,5 +23,6 @@ export class DespesasPage {
     
     this.navCtrl.pop();
   } 
+  invenTA: any = "R$" + this.valor;
 
 }

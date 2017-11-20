@@ -10,9 +10,5 @@ export class ReceitasFornecedorPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ReceitasPage');
-  }
  
 }

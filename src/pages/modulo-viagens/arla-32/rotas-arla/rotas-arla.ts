@@ -17,9 +17,6 @@ export class RotasArlaPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController ) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Rotas2Page');
-  }
 
   toBack() {
     this.contador -= 1;
