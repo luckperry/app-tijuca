@@ -1,36 +1,65 @@
-<ion-content>
+<ion-content scrollbar-y="false">
 
     <div class="fixed-content">
 
+        <!-- Início de slides -->
         <ion-slides>
+
             <ion-slide>
                 <page-abastecimento-pagamento></page-abastecimento-pagamento>
             </ion-slide>
+
+
             <ion-slide>
+
                 <page-abastecimento-odometro></page-abastecimento-odometro>
+
+
             </ion-slide>
+
             <ion-slide>
                 <page-abastecimento-bomba-1></page-abastecimento-bomba-1>
+<<<<<<< HEAD
+
+
+                <div class="img">
+                    <img class="image" src="assets/images/img.png" />
+                </div>
+=======
                 <img src="{{fotoBomba1}}" />
+>>>>>>> 911295df8f517b46cdff6757e51d37afa010e831
             </ion-slide>
+
             <ion-slide>
                 <page-abastecimento-bomba-2></page-abastecimento-bomba-2>
+<<<<<<< HEAD
+
+                <div class="img">
+                        <img class="image" src="assets/images/img.png" />
+                    </div>
+=======
                 <img src="{{fotoBomba2}}" />
+>>>>>>> 911295df8f517b46cdff6757e51d37afa010e831
             </ion-slide>
         </ion-slides>
+        <!-- fim de slides -->
 
+
+        <!-- Botão passar -->
         <ion-fab right bottom>
             <button ion-fab color="primary" (click)="toGo()">
                 <ion-icon name="ios-arrow-forward"></ion-icon>
             </button>
         </ion-fab>
 
+        <!-- Botão câmera -->
         <ion-fab>
             <button *ngIf="cameraButton" class="button-camera" ion-button outline>
                 <ion-icon name="ios-camera" (click)=" this.foto.getFoto('picture');mostrar()"></ion-icon>
             </button>
         </ion-fab>
 
+        <!-- Botão voltar -->
         <ion-fab left bottom>
             <button ion-fab color="primary" (click)="toBack()">
                 <ion-icon color="warning" name="ios-arrow-back"></ion-icon>
