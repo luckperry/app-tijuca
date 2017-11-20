@@ -16,12 +16,7 @@ export class ViagensPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ViagensPage');
-  }
-
+ 
   linkAbastecimento(){
     this.navCtrl.push(RotasAbastecimentoPage);
   }
