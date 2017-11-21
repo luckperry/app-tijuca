@@ -15,6 +15,7 @@ export class RotasAbastecimentoPage {
   cameraButton: boolean;
   fotoBomba1: string;
   fotoBomba2: string;
+  fotoOdometro: string;
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, 
@@ -65,12 +66,16 @@ export class RotasAbastecimentoPage {
     .then(responses => {
     
       if (this.contador == 3 ){
-        this.fotoBomba1 = this.foto.ultimaFoto;
-        console.log(this.fotoBomba1);}
+        this.fotoOdometro = this.foto.ultimaFoto;
+        console.log(this.fotoOdometro);}
       
       if (this.contador == 4){
-        this.fotoBomba2 = this.foto.ultimaFoto;
-        console.log("bomba 2");}
+        this.fotoBomba1 = this.foto.ultimaFoto;
+        console.log(this.fotoBomba1);}
+
+        if (this.contador == 7){
+          this.fotoBomba2 = this.foto.ultimaFoto;
+          console.log(this.fotoBomba2);}
       })
     }
 }
