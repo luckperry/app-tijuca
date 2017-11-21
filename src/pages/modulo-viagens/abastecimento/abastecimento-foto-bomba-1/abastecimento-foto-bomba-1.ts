@@ -10,9 +10,5 @@ export class AbastecimentoFotoBomba_1Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AbastecimentoFotoBomba_1Page');
-  }
-
+ 
 }

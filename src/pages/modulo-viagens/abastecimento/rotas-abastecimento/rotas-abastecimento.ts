@@ -52,7 +52,7 @@ export class RotasAbastecimentoPage {
       this.navCtrl.pop();
     }
 
-    if(this.contador == 3 || this.contador == 4){
+    if(this.contador == 3 || this.contador == 5 || this.contador == 7 ){
       this.cameraButton = true;
     }else{
       this.cameraButton = false;
