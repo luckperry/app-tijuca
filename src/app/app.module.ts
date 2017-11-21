@@ -26,6 +26,9 @@ import { AbastecimentoOdometroPage } from '../pages/modulo-viagens/abastecimento
 import { AbastecimentoBomba1Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-1/abastecimento-bomba-1';
 import { AbastecimentoBomba2Page } from '../pages/modulo-viagens/abastecimento/abastecimento-bomba-2/abastecimento-bomba-2';
 import { RotasAbastecimentoPage } from '../pages/modulo-viagens/abastecimento/rotas-abastecimento/rotas-abastecimento';
+import { AbastecimentoFotoBomba_1Page } from '../pages/modulo-viagens/abastecimento/abastecimento-foto-bomba-1/abastecimento-foto-bomba-1';
+import { AbastecimentoFotoBomba_2Page } from '../pages/modulo-viagens/abastecimento/abastecimento-foto-bomba-2/abastecimento-foto-bomba-2';
+import { AbastecimentoFotoOdometroPage } from '../pages/modulo-viagens/abastecimento/abastecimento-foto-odometro/abastecimento-foto-odometro';
 
 import { RotasArlaPage } from '../pages/modulo-viagens/arla-32/rotas-arla/rotas-arla';
 import { RotasReceitasPage } from '../pages/modulo-viagens/receitas/rotas-receitas/rotas-receitas';
@@ -57,7 +60,10 @@ import { FotoServicoProvider } from '../providers/foto-servico/foto-servico';
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
     ArlaPagPage,
-    ArlaPostoPage
+    ArlaPostoPage,
+    AbastecimentoFotoBomba_1Page,
+    AbastecimentoFotoBomba_2Page,
+    AbastecimentoFotoOdometroPage
     
   ],
   imports: [
@@ -87,7 +93,10 @@ import { FotoServicoProvider } from '../providers/foto-servico/foto-servico';
     GeralDadosViagemPage,
     GeralDadosMotoristaPage,
     ArlaPagPage,
-    ArlaPostoPage
+    ArlaPostoPage,
+    AbastecimentoFotoBomba_1Page,
+    AbastecimentoFotoBomba_2Page,
+    AbastecimentoFotoOdometroPage
   ],
   providers: [
     StatusBar,

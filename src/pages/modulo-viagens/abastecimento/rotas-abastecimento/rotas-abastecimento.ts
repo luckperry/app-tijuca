@@ -42,7 +42,7 @@ export class RotasAbastecimentoPage {
   toGo() {
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
-    if (this.contador == 5) {
+    if (this.contador == 8) {
 
       let toast = this.toastCtrl.create({
         message: 'Abastecimento adicionada com sucesso',

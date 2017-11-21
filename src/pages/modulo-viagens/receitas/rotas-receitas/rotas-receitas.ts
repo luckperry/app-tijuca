@@ -20,12 +20,7 @@ export class RotasReceitasPage {
     public navParams: NavParams,
     public toastCtrl: ToastController,
     public camera: Camera) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RotasReceitasPage');
-  }
-
+  } 
   toBack() {
     this.contador -= 1;
     this.slides.slidePrev(400)

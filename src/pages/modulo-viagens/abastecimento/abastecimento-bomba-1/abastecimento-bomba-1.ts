@@ -37,9 +37,5 @@ export class AbastecimentoBomba1Page {
       console.log('Erro na última foto')
     });
 
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Abastecimento3Page');
-  }
-
+  } 
 }
