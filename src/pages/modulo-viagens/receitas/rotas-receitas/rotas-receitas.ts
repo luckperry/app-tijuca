@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, ToastController } from 'ionic-angular';
-import { Camera } from '@ionic-native/camera';
+import { FotoServicoProvider } from '../../../../providers/foto-servico/foto-servico';
 
 
 @IonicPage()
@@ -13,17 +13,22 @@ export class RotasReceitasPage {
   @ViewChild(Slides) slides: Slides;
 
   contador: number = 1;
-  cameraButton: boolean;
-  ultimaFoto: string;
-  exibirImagem: boolean;
+  cameraButton: boolean; 
+  fotoReceitas: string;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public toastCtrl: ToastController,
-    public camera: Camera) {
-  } 
+    public foto: FotoServicoProvider) {
+  }
   toBack() {
     this.contador -= 1;
     this.slides.slidePrev(400)
+    if (this.contador == 2) {
+      this.cameraButton = true;
+    } else {
+      this.cameraButton = false;
+    }
     if (this.contador == 0) {
       this.navCtrl.pop();
     }
@@ -42,10 +47,20 @@ export class RotasReceitasPage {
 
       this.navCtrl.pop();
     }
-  }
-
-
-
-
-  
+    if (this.contador == 2) {
+      this.cameraButton = true;
+    } else {
+      this.cameraButton = false;
+    }
+  }  
+  mostrar(){
+    
+        this.foto.getFoto('picture')
+        .then(responses => {
+        
+          if (this.contador == 2 ){
+            this.fotoReceitas = this.foto.ultimaFoto;
+            console.log(this.fotoReceitas);}
+          })    
+        }
 }

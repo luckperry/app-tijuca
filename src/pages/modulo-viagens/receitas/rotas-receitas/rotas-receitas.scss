@@ -15,6 +15,16 @@ page-rotas-receitas {
         to{opacity: 1;transform: scale(4,4)}
     }
 
+
+    .img{
+        width: 90vw;
+        height: 70vh;
+        border: 0.1vh solid #135F8C;
+        margin: 0 auto;
+        margin-bottom: 10vh;
+        margin-top: 1vh; 
+        background: url('{{fotoOdometro}}');
+    }  
 }
         
 
