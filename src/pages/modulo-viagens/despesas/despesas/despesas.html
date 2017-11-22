@@ -1,14 +1,11 @@
 <ion-header>
-      <ion-toolbar>
+  <ion-navbar>
     <ion-title>Despesas da Viagem</ion-title>
-    </ion-toolbar>
-
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
   <ion-list>
-
     <div class="form-group" [class.has-success]="iptDespesa.valid && (iptDespesa.touched)" [class.has-error]="!iptDespesa.valid && (iptDespesa.touched)">
       <ion-item>
         <ion-label floating>Despesas</ion-label>
@@ -16,13 +13,13 @@
           <ion-option value="1">Lanche</ion-option>
           <ion-option value="2">Almoço</ion-option>
           <ion-option value="3">Jantar</ion-option>
-          <!-- <ion-option value="4">Almoçado</ion-option> -->
+          <!-- <ion-option value="4">Almoçado</ion-option> 
           <ion-option value="5">Borracharia</ion-option>
           <ion-option value="6">Corrente</ion-option>
           <ion-option value="7">Lavagem de veículos</ion-option>
           <ion-option value="8">Conserto de pneu</ion-option>
           <ion-option value="9">Carga/Descarga</ion-option>
-          <ion-option value="10">Moto taxi</ion-option>
+          <ion-option value="10">Moto taxi</ion-option> -->
         </ion-select>
       </ion-item>
     </div>
@@ -39,7 +36,7 @@
     <div class="form-group" [class.has-success]="iptValor.valid && (iptValor.touched || iptValor.dirty)" [class.has-error]="!iptValor.valid && (iptValor.touched || iptValor.dirty)">
       <ion-item>
         <ion-label floating>Valor</ion-label>
-        <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel" ></ion-input>
+        <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel"></ion-input>
       </ion-item>
     </div>
   </ion-list>

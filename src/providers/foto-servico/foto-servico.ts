@@ -7,7 +7,7 @@ export class FotoServicoProvider {
 
     exibirImagem: boolean;
     ultimaFoto: string;
-   
+    data;
     constructor(public camera: Camera){}
 
     getFoto(type)  {
@@ -23,12 +23,12 @@ export class FotoServicoProvider {
             };
 
             this.exibirImagem = true;
-            console.log("O metodo foi acionado")
+            console.log(Date())
     
             this.camera.getPicture(options).then((imageData) => {
     
                 this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
-
+                
                 resolve(this.ultimaFoto);
 
             }, (err) => {

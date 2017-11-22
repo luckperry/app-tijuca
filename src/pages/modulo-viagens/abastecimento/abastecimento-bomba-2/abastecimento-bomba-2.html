@@ -9,7 +9,7 @@
 <div class="form-group" [class.has-success]="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" [class.has-error]="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)">
     <ion-item>
         <ion-label floating>Litros</ion-label>
-        <ion-input type="float" min="0" [(ngModel)]="litros" required #iptLitros="ngModel"></ion-input>
+        <ion-input type="number" min="0" [(ngModel)]="litros" required #iptLitros="ngModel"></ion-input>
     </ion-item>
     <span class="help-block" *ngIf="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="secondary">OK!</span>
     <span class="help-block" *ngIf="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="danger">Campo Obrigatório!</span>
@@ -18,7 +18,7 @@
 <div class="form-group" [class.has-success]="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" [class.has-error]="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)">
     <ion-item>
         <ion-label floating>Preço/L</ion-label>
-        <ion-input type="float" min="0" [(ngModel)]="preco" required #iptPreco="ngModel"></ion-input>
+        <ion-input type="number" min="0" [(ngModel)]="preco" required #iptPreco="ngModel"></ion-input>
     </ion-item>
     <span class="help-block" *ngIf="iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="secondary">OK!</span>
     <span class="help-block" *ngIf="!iptPreco.valid && (iptPreco.touched || iptPreco.dirty)" ion-text color="danger">Campo Obrigatório!</span>

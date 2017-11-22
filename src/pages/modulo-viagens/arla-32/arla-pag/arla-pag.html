@@ -9,7 +9,7 @@
   <div class="form-group" [class.has-success]="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" [class.has-error]="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)">
     <ion-item>
       <ion-label floating>Litros</ion-label>
-      <ion-input type="float" min="0" [(ngModel)]="litros" required #iptLitros="ngModel"></ion-input>
+      <ion-input type="number" min="0" [(ngModel)]="litros" required #iptLitros="ngModel"></ion-input>
     </ion-item>
     <span class="help-block" *ngIf="iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="secondary">OK!</span>
     <span class="help-block" *ngIf="!iptLitros.valid && (iptLitros.touched || iptLitros.dirty)" ion-text color="danger">Campo Obrigatório!</span>

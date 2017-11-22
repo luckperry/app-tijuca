@@ -77,6 +77,7 @@ export class RotasAbastecimentoPage {
           this.fotoBomba2 = this.foto.ultimaFoto;
           console.log(this.fotoBomba2);}
       })
+
     }
 }
 
