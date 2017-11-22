@@ -33,7 +33,7 @@ export class RotasAbastecimentoPage {
       
     }
 
-    if(this.contador == 3 || this.contador == 4){
+    if(this.contador == 3 || this.contador == 5 || this.contador == 7 ){
       this.cameraButton = true;
     }else{
       this.cameraButton = false;
@@ -69,7 +69,7 @@ export class RotasAbastecimentoPage {
         this.fotoOdometro = this.foto.ultimaFoto;
         console.log(this.fotoOdometro);}
       
-      if (this.contador == 4){
+      if (this.contador == 5){
         this.fotoBomba1 = this.foto.ultimaFoto;
         console.log(this.fotoBomba1);}
 
