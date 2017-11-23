@@ -3,6 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PrincipalPage } from '../pages/principal/principal/principal'; 
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -10,10 +12,19 @@ import { PrincipalPage } from '../pages/principal/principal/principal';
 export class MyApp {
   rootPage:any = PrincipalPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    platform.ready().then(() => {   
-      statusBar.styleDefault();
-      splashScreen.hide();
+  constructor(
+            platform: Platform, 
+            statusBar: StatusBar, 
+            splashScreen: SplashScreen,
+    private screenOrientation: ScreenOrientation
+    
+  ) {
+
+      platform.ready().then(() => { 
+        this.screenOrientation.lock(screenOrientation.ORIENTATIONS.PORTRAIT);  
+        statusBar.styleDefault();
+        splashScreen.hide();
+
     });
   }
 }
