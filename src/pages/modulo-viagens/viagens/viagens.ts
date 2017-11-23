@@ -6,6 +6,7 @@ import { GeralPage } from '../geral/geral-page/geral-page';
 import { DespesasPage } from '../despesas/despesas/despesas';
 import { RotasArlaPage } from '../arla-32/rotas-arla/rotas-arla';
 import { RotasReceitasPage } from '../receitas/rotas-receitas/rotas-receitas';
+import { RelatoriosPage } from '../relatorios/relatorios';
 
 @IonicPage()
 @Component({
@@ -36,5 +37,9 @@ export class ViagensPage {
   linkGeral(){
     this.navCtrl.push(GeralPage);
   }
-
+  
+  linkRelatorios(){
+    this.navCtrl.push(RelatoriosPage);
+  }
+  
 }

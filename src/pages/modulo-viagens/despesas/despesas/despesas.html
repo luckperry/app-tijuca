@@ -6,7 +6,7 @@
 
 <ion-content padding>
   <ion-list>
-    <div class="form-group" [class.has-success]="iptDespesa.valid && (iptDespesa.touched)" [class.has-error]="!iptDespesa.valid && (iptDespesa.touched)">
+    
       <ion-item>
         <ion-label floating>Despesas</ion-label>
         <ion-select [(ngModel)]="despesa" required #iptDespesa="ngModel">
@@ -22,24 +22,15 @@
           <ion-option value="10">Moto taxi</ion-option> -->
         </ion-select>
       </ion-item>
-    </div>
-
-    <div class="form-group" [class.has-success]="iptData.valid && (iptData.touched)" [class.has-error]="!iptData.valid && (iptData.touched)">
-      <ion-item>
+    
+  <ion-item>
         <ion-label>Data</ion-label>
         <ion-input type="date" [(ngModel)]="data" required #iptData="ngModel"></ion-input>
-      </ion-item>
-      <!-- <span class="help-block" *ngIf="iptData.valid && (iptData.touched)" ion-text color="secondary">OK!</span>
-      <span class="help-block" *ngIf="!iptData.valid && (iptData.touched)" ion-text color="danger">Campo Obrigatório!</span>-->
-    </div>
-
-    <div class="form-group" [class.has-success]="iptValor.valid && (iptValor.touched || iptValor.dirty)" [class.has-error]="!iptValor.valid && (iptValor.touched || iptValor.dirty)">
+      </ion-item> 
       <ion-item>
         <ion-label floating>Valor</ion-label>
         <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel"></ion-input>
-      </ion-item>
-    </div>
-  </ion-list>
-  <button ion-button full color="danger" *ngIf=" !iptValor.valid || !iptData.valid || !iptDespesa.valid">Adicionar</button>
-  <button ion-button full (click)="showAlert()" *ngIf="iptValor.valid && iptData.valid && iptDespesa.valid">Adicionar</button>
+      </ion-item> 
+  </ion-list> 
+  <button ion-button full (click)="showAlert()"  >Adicionar</button>
 </ion-content>
