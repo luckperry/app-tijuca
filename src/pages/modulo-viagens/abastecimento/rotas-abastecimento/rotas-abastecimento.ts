@@ -24,8 +24,12 @@ export class RotasAbastecimentoPage {
   ) {} 
 
 
-   
+  ngAfterViewInit(){
+    this.slides.lockSwipes(true);
+  }
+
   toBack() {
+    this.slides.lockSwipes(false);
     this.contador -= 1;
     this.slides.slidePrev(400)
     if (this.contador == 0) {
@@ -38,9 +42,11 @@ export class RotasAbastecimentoPage {
     }else{
       this.cameraButton = false;
     }
+    this.slides.lockSwipes(true);
   }
 
   toGo() {
+    this.slides.lockSwipes(false);
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
     if (this.contador == 8) {
@@ -51,6 +57,7 @@ export class RotasAbastecimentoPage {
       });
       toast.present();
       this.navCtrl.pop();
+      
     }
 
     if(this.contador == 3 || this.contador == 5 || this.contador == 7 ){
@@ -58,6 +65,7 @@ export class RotasAbastecimentoPage {
     }else{
       this.cameraButton = false;
     }
+    this.slides.lockSwipes(true);
   }
 
   mostrar(){

@@ -18,15 +18,22 @@ export class RotasArlaPage {
   }
 
 
+  ngAfterViewInit(){
+    this.slides.lockSwipes(true);
+  }
+
   toBack() {
+    this.slides.lockSwipes(false);
     this.contador -= 1;
     this.slides.slidePrev(400)
     if (this.contador == 0) {
       this.navCtrl.pop();
     } 
+    this.slides.lockSwipes(true);
   }
 
   toGo() {
+    this.slides.lockSwipes(false);
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
     if (this.contador == 3) {
@@ -39,6 +46,7 @@ export class RotasArlaPage {
 
       this.navCtrl.pop();
     } 
+    this.slides.lockSwipes(true);
   }
 
 }

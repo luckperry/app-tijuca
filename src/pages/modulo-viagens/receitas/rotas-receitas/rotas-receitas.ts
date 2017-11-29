@@ -21,7 +21,14 @@ export class RotasReceitasPage {
     public toastCtrl: ToastController,
     public foto: FotoServicoProvider) {
   }
+
+
+  ngAfterViewInit(){
+    this.slides.lockSwipes(true);
+  }
+
   toBack() {
+    this.slides.lockSwipes(false);
     this.contador -= 1;
     this.slides.slidePrev(400)
     if (this.contador == 2) {
@@ -32,9 +39,11 @@ export class RotasReceitasPage {
     if (this.contador == 0) {
       this.navCtrl.pop();
     }
+    this.slides.lockSwipes(true);
   }
 
   toGo() {
+    this.slides.lockSwipes(false);
     this.slides.slideTo(this.contador, 400)
     this.contador += 1;
     if (this.contador == 4) {
@@ -52,6 +61,7 @@ export class RotasReceitasPage {
     } else {
       this.cameraButton = false;
     }
+    this.slides.lockSwipes(true);
   }  
   mostrar(){
     
