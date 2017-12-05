@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular'; 
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @IonicPage()
@@ -10,32 +10,19 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class AbastecimentoBomba1Page {
   preco;
   litros;
-  ultimaFoto;
-  exibirImagem = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public camera: Camera) {
   }
-  getFoto(type) {
 
-    const options: CameraOptions = {
-      quality: 100,
-      destinationType: this.camera.DestinationType.DATA_URL,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE,
-      sourceType: type == "picture" ? this.camera.PictureSourceType.CAMERA : this.camera.PictureSourceType.SAVEDPHOTOALBUM,
-      correctOrientation: true
-    };
+  valida() {
 
-    this.exibirImagem = true;
-    console.log("O metodo foi acionado")
+    if (this.preco != undefined && this.litros != undefined) {
+      return true;
+    }
+    if (this.preco == "" || this.litros == "") {
+      return false;
+    }
 
-    this.camera.getPicture(options).then((imageData) => {
+  }
 
-      this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
-
-    }, (err) => {
-      // Handle error
-      console.log('Erro na última foto')
-    });
-
-  } 
 }

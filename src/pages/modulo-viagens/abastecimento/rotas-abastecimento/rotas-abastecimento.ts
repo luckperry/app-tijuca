@@ -2,6 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { FotoServicoProvider } from '../../../../providers/foto-servico/foto-servico'
+import { AbastecimentoPagamentoPage } from '../abastecimento-pagamento/abastecimento-pagamento';
+import { AbastecimentoOdometroPage } from '../abastecimento-odometro/abastecimento-odometro';
+import { AbastecimentoBomba1Page } from '../abastecimento-bomba-1/abastecimento-bomba-1';
+import { AbastecimentoBomba2Page } from '../abastecimento-bomba-2/abastecimento-bomba-2';
 
 @IonicPage()
 @Component({
@@ -10,22 +14,69 @@ import { FotoServicoProvider } from '../../../../providers/foto-servico/foto-ser
 })
 export class RotasAbastecimentoPage {
   @ViewChild(Slides) slides: Slides;
+  @ViewChild(AbastecimentoPagamentoPage) abastecimentoPagamento: AbastecimentoPagamentoPage;
+  @ViewChild(AbastecimentoOdometroPage) abastecimentoOdometro: AbastecimentoOdometroPage;
+  @ViewChild(AbastecimentoBomba1Page) abastecimentoBomba1: AbastecimentoBomba1Page;
+  @ViewChild(AbastecimentoBomba2Page) abastecimentoBomba2: AbastecimentoBomba2Page;
+
 
   public contador: number = 1;
   cameraButton: boolean;
-  fotoBomba1: string;
-  fotoBomba2: string;
-  fotoOdometro: string;
+  fotoBomba1: string = "asda";
+  fotoBomba2: string = "asda";
+  fotoOdometro: string = "asdsa";
+  permissao: boolean;
 
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams, 
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
     public toastCtrl: ToastController,
     public foto: FotoServicoProvider
-  ) {} 
+  ) {
+
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad Abastecimento2Page');
+  }
 
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.slides.lockSwipes(true);
+
+    if (this.contador == 1) {
+      return this.abastecimentoPagamento.valida();
+    }
+
+    if (this.contador == 2) {
+      return this.abastecimentoOdometro.valida();
+    }
+
+    if (this.contador == 3) {
+      if (this.fotoOdometro != undefined) {
+        return true;
+      }
+    }
+
+    if (this.contador == 4) {
+      return this.abastecimentoBomba1.valida();
+    }
+
+    if (this.contador == 5) {
+      if (this.fotoBomba1 != undefined) {
+        return true;
+      }
+    }
+
+    if (this.contador == 6) {
+      return this.abastecimentoBomba2.valida();
+    }
+
+    if (this.contador == 7) {
+      if (this.fotoBomba2 != undefined) {
+        return true;
+      }
+    }
+
   }
 
   toBack() {
@@ -34,12 +85,12 @@ export class RotasAbastecimentoPage {
     this.slides.slidePrev(400)
     if (this.contador == 0) {
       this.navCtrl.pop();
-      
+
     }
 
-    if(this.contador == 3 || this.contador == 5 || this.contador == 7 ){
+    if (this.contador == 3 || this.contador == 5 || this.contador == 7) {
       this.cameraButton = true;
-    }else{
+    } else {
       this.cameraButton = false;
     }
     this.slides.lockSwipes(true);
@@ -57,35 +108,38 @@ export class RotasAbastecimentoPage {
       });
       toast.present();
       this.navCtrl.pop();
-      
+
     }
 
-    if(this.contador == 3 || this.contador == 5 || this.contador == 7 ){
+    if (this.contador == 3 || this.contador == 5 || this.contador == 7) {
       this.cameraButton = true;
-    }else{
+    } else {
       this.cameraButton = false;
     }
     this.slides.lockSwipes(true);
   }
 
-  mostrar(){
+  mostrar() {
 
     this.foto.getFoto('picture')
-    .then(responses => {
-    
-      if (this.contador == 3 ){
-        this.fotoOdometro = this.foto.ultimaFoto;
-        console.log(this.fotoOdometro);}
-      
-      if (this.contador == 5){
-        this.fotoBomba1 = this.foto.ultimaFoto;
-        console.log(this.fotoBomba1);}
+      .then(responses => {
 
-        if (this.contador == 7){
+        if (this.contador == 3) {
+          this.fotoOdometro = this.foto.ultimaFoto;
+          console.log(this.fotoOdometro);
+        }
+
+        if (this.contador == 5) {
+          this.fotoBomba1 = this.foto.ultimaFoto;
+          console.log(this.fotoBomba1);
+        }
+
+        if (this.contador == 7) {
           this.fotoBomba2 = this.foto.ultimaFoto;
-          console.log(this.fotoBomba2);}
+          console.log(this.fotoBomba2);
+        }
       })
 
-    }
+  }
 }
 

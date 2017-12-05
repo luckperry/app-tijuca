@@ -9,34 +9,21 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 })
 export class AbastecimentoOdometroPage {
   ultimaFoto;
-  kmRodados;
+  odometro;
 
   constructor(public navCtrl: NavController, public camera: Camera) {
   }
-  getFoto(type) {
+
+  valida() {
     
-        const options: CameraOptions = {
-          quality: 100,
-          destinationType: this.camera.DestinationType.DATA_URL,
-          encodingType: this.camera.EncodingType.JPEG,
-          mediaType: this.camera.MediaType.PICTURE,
-          sourceType: type == "picture" ? this.camera.PictureSourceType.CAMERA : this.camera.PictureSourceType.SAVEDPHOTOALBUM,
-          correctOrientation: true
-        };
+        if (this.odometro != undefined) {
+          // console.log(this.validaPagamento);
+          return true;
+        }
+        if (this.odometro == "") {
+          // console.log(this.validaPagamento)
+          return false;
+        }
     
-        this.camera.getPicture(options).then((imageData) => {
-    
-          this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
-    
-        }, (err) => {
-          // Handle error
-          console.log('Erro na última foto')
-        });
       }
-
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Abastecimento2Page');
-  }
-
 }

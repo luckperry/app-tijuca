@@ -11,16 +11,34 @@ export class AbastecimentoPagamentoPage {
   data;
   tipo;
   campo;
-  
-  myModel: any;
+  posto;
+  validaPagamento: boolean;
+  teste;
 
   constructor(public navCtrl: NavController) {
-    this.myModel = {};
 
-   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AbastecimentoPage');
   }
+
+
+
+   valida() {
+
+    if (this.posto != undefined && this.tipo != undefined && this.pagamento != undefined && this.data != undefined) {
+      this.validaPagamento = true;
+      // console.log(this.validaPagamento);
+      return true;
+    }
+    if (this.posto == "" || this.tipo == "" || this.pagamento == "" || this.data == "") {
+      this.validaPagamento = false;
+      // console.log(this.validaPagamento)
+      return false;
+    }
+
+  }
+
+  ngAfterViewInit(){
+    this.teste = this.valida()
+  }
+
 
 }

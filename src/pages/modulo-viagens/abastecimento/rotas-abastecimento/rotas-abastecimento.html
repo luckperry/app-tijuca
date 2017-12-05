@@ -1,4 +1,4 @@
-<ion-content scrollbar-y="false">
+<ion-content>
 
     <div class="fixed-content">
 
@@ -6,7 +6,9 @@
         <ion-slides>
 
             <ion-slide>
+                {{this.abastecimentoPagamento.valida()}}
                 <page-abastecimento-pagamento class="a"></page-abastecimento-pagamento>
+                
             </ion-slide>
 
             <ion-slide>
@@ -47,7 +49,7 @@
 
         <!-- Botão passar -->
         <ion-fab right bottom>
-            <button ion-fab color="primary" (click)="toGo()">
+            <button ion-fab color="primary" [disabled]="!ngAfterViewInit()" (click)="toGo()">
                 <ion-icon name="ios-arrow-forward"></ion-icon>
             </button>
         </ion-fab>
