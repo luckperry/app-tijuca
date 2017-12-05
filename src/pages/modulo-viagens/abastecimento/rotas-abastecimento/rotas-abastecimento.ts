@@ -24,7 +24,7 @@ export class RotasAbastecimentoPage {
   cameraButton: boolean;
   fotoBomba1: string = "asda";
   fotoBomba2: string = "asda";
-  fotoOdometro: string = "asdsa";
+  fotoOdometro: string = "asdasd";
   permissao: boolean;
 
   constructor(public navCtrl: NavController,
@@ -33,10 +33,6 @@ export class RotasAbastecimentoPage {
     public foto: FotoServicoProvider
   ) {
 
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Abastecimento2Page');
   }
 
 

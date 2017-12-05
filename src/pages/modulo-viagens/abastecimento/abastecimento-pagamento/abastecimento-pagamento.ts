@@ -7,38 +7,23 @@ import { IonicPage, NavController } from 'ionic-angular';
   templateUrl: 'abastecimento-pagamento.html',
 })
 export class AbastecimentoPagamentoPage {
-  pagamento;
-  data;
-  tipo;
-  campo;
-  posto;
-  validaPagamento: boolean;
-  teste;
+  pagamento: string = "";
+  data: string = "";
+  tipo: string = "";
+  posto: string = "";
 
   constructor(public navCtrl: NavController) {
 
   }
 
+  valida() {
 
-
-   valida() {
-
-    if (this.posto != undefined && this.tipo != undefined && this.pagamento != undefined && this.data != undefined) {
-      this.validaPagamento = true;
-      // console.log(this.validaPagamento);
+    if (this.posto == "" || this.tipo == "" || this.pagamento == "" || this.data == "") {
+      return false;
+    } else {
       return true;
     }
-    if (this.posto == "" || this.tipo == "" || this.pagamento == "" || this.data == "") {
-      this.validaPagamento = false;
-      // console.log(this.validaPagamento)
-      return false;
-    }
 
   }
-
-  ngAfterViewInit(){
-    this.teste = this.valida()
-  }
-
 
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
@@ -8,22 +7,19 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
   templateUrl: 'abastecimento-odometro.html',
 })
 export class AbastecimentoOdometroPage {
-  ultimaFoto;
-  odometro;
+  odometro: string = "";
 
   constructor(public navCtrl: NavController, public camera: Camera) {
   }
 
   valida() {
     
-        if (this.odometro != undefined) {
-          // console.log(this.validaPagamento);
+        if (this.odometro == "") {
+          return false;
+        }else{
           return true;
         }
-        if (this.odometro == "") {
-          // console.log(this.validaPagamento)
-          return false;
-        }
+        
     
       }
 }
