@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 
@@ -8,9 +8,23 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
   templateUrl: 'despesas.html',
 })
 export class DespesasPage {
-  valor;
+  
+  despesa: string = "";
+  data: string = "" ;
+  valor: string = "" ;
+  
+  public contador: number = 1;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     public toastCtrl: ToastController) {
+  }
+
+  ngAfterViewInit() {
+    (true);
+
+    if (this.contador == 1) {
+      return this.valida();
+    }
   }
 
   showAlert() {
@@ -24,5 +38,15 @@ export class DespesasPage {
     this.navCtrl.pop();
   } 
   invenTA: any = "R$" + this.valor;
+
+  valida() {
+    
+        if (this.despesa == "" || this.data == "" || this.valor == "") {
+          return false;
+        } else {
+          return true;
+        }
+    
+      }
 
 }

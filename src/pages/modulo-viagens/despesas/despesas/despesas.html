@@ -9,7 +9,7 @@
     
       <ion-item>
         <ion-label floating>Despesas</ion-label>
-        <ion-select [(ngModel)]="despesa" required #iptDespesa="ngModel">
+        <ion-select [(ngModel)]="despesa" (click)="valida()">
           <ion-option value="1">Lanche</ion-option>
           <ion-option value="2">Almoço</ion-option>
           <ion-option value="3">Jantar</ion-option>
@@ -25,12 +25,12 @@
     
   <ion-item>
         <ion-label>Data</ion-label>
-        <ion-input type="date" [(ngModel)]="data" required #iptData="ngModel"></ion-input>
+        <ion-input type="date" [(ngModel)]="data" (ngModelChange)="valida()"></ion-input>
       </ion-item> 
       <ion-item>
         <ion-label floating>Valor</ion-label>
-        <ion-input type="float" type="number" [(ngModel)]="valor" required #iptValor="ngModel"></ion-input>
+        <ion-input type="float" type="number" [(ngModel)]="valor" (ngModelChange)="valida()"></ion-input>
       </ion-item> 
   </ion-list> 
-  <button ion-button full (click)="showAlert()"  >Adicionar</button>
+  <button ion-button full (click)="showAlert()" [disabled]="!ngAfterViewInit()">Adicionar</button>
 </ion-content>
