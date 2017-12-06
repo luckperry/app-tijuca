@@ -9,7 +9,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 export class AbastecimentoOdometroPage {
   odometro: string = "";
 
-  constructor(public navCtrl: NavController, public camera: Camera) {
+  constructor(public navCtrl: NavController) {
   }
 
   valida() {

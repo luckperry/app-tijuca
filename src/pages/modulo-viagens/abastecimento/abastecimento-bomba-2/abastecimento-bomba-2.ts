@@ -11,7 +11,7 @@ export class AbastecimentoBomba2Page {
   preco: string = "";
   litros: string = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public viewCtrl: ViewController, public camera: Camera) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public viewCtrl: ViewController) {
   }
 
   valida() {
