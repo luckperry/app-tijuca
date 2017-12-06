@@ -8,17 +8,17 @@
 
   <ion-item>
     <ion-label floating>Litros</ion-label>
-    <ion-input type="number" min="0"></ion-input>
+    <ion-input type="number" [(ngModel)]="litros" min="0"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Litro(R$)</ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-input type="number" [(ngModel)]="litro"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Total(R$)</ion-label>
-    <ion-input type="number" disabled=""></ion-input>
+    <ion-input type="number" disabled="" [value]="preco()"></ion-input>
   </ion-item>
 
   <ion-item>
