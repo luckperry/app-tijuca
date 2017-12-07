@@ -13,14 +13,18 @@ export class ArlaPagPage {
   //total: string = "";
   litrosPreco: string = "";
   select: string = "";
+
+  valorLitros: number;
+  valorLitro: number;
   
   
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     public alertCtrl: AlertController) {
   }
-  // preco(){
-  //   return this.litros * this.litroPreco;
-  // }
+  
+   preco(){
+     return this.valorLitros * this.valorLitro;
+   }
  
    valida() {
      
